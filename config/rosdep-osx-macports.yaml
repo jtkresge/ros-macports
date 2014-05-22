@@ -290,6 +290,10 @@ lua-dev:
   osx:
     macports:
       packages: [lua51]
+lz4:
+  osx:
+    macports:
+      packages: [lz4]
 mercurial:
   osx:
     macports:
