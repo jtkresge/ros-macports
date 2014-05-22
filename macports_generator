@@ -120,7 +120,7 @@ def process_package(cachedir, deps_map, pkg, portdir, prefix,
             run_deps[i] = prefix + run_deps[i]
 
     if pkgname != "catkin":
-        build_deps.append("ros-hydro-catkin")
+        build_deps.append("ros-indigo-catkin")
 
     url = find_download_url(cachedir, pkgname)
     # Whats life without a little golf
@@ -207,7 +207,7 @@ def generate_ports():
     """
     args = parseargs()
 
-    prefix = "ros-hydro-"
+    prefix = "ros-indigo-"
     portdir = args.port_dir
     force_download = args.force_download
     sysdepsfile = args.system_deps
