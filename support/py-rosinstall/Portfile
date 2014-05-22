@@ -11,14 +11,12 @@ platforms           darwin
 license             bsd
 maintainers         afit.edu:kyle.kauffman
 description         ROS installer
-long_description    The installer for ROS
 homepage            http://www.ros.org/wiki/rosinstall
-master_sites        http://download.ros.org/downloads/rosinstall/
 
-checksums           rmd160  c01aea9daeaffd40afb711a1430c0350b7163c12 \
-                    sha256  c46b2ec0635317e72b1bf0073f71d397161a700a592abbff63e59e63bef108e2 
-
-distname            rosinstall-${version}
+fetch.type          git
+git.url             https://github.com/vcstools/rosinstall.git
+git.branch          2fba93b94d2c1e9c601493830b9511fcdc274344
+checksum {}
 
 depends_build		port:py${python.version}-setuptools
 depends_run			port:py${python.version}-yaml \

@@ -5,7 +5,7 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-catkin-pkg
-version             0.1.27
+version             0.2.2
 categories          python
 platforms           darwin
 license             bsd
@@ -15,7 +15,7 @@ homepage            https://github.com/ros-infrastructure/catkin_pkg
 
 fetch.type          git
 git.url             https://github.com/ros-infrastructure/catkin_pkg.git
-git.branch          908bd8bb950f9fea07388c0ce42c5d5ceb9ba998
+git.branch          8314c2ea361d7c97deee6e6b4c3445599fbc754c
 checksum {}
 
 depends_build       port:py${python.version}-setuptools

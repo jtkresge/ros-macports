@@ -5,19 +5,18 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-vcstools
-version             0.1.33
+version             0.1.35
 categories          python
 platforms           darwin
 license             bsd
 maintainers         afit.edu:kyle.kauffman
 description         ROS VCS tool
-long_description    Python API for interacting with version control systems
 homepage            http://www.ros.org/wiki/vcstools
-master_sites        http://download.ros.org/downloads/vcstools/
 
-distname            vcstools-${version}
-
-checksums           sha256  d1cce21edd98d1e344dfd38a0936870d08008e177aac9b8ef63003ee16e1c124
+fetch.type          git
+git.url             https://github.com/vcstools/vcstools.git
+git.branch          a6a0ee4c9201e8bd9b7a7e28efb2c826cda7a1b2
+checksum {}
 
 depends_build		port:py${python.version}-setuptools
 depends_run			port:py${python.version}-dateutil \

@@ -5,22 +5,22 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-wstool
-version             0.1.1
+version             0.1.3
 categories          python
 platforms           darwin
 license             bsd
 maintainers         afit.edu:kyle.kauffman
 description         A tool for managing a workspace of multiple heterogenous SCM repositories
-long_description    A tool for managing a workspace of multiple heterogenous SCM repositories
 homepage            http://www.ros.org/wiki/wstool
 master_sites        http://download.ros.org/downloads/wstool/
 
+fetch.type          git
+git.url             https://github.com/vcstools/wstool.git
+git.branch          477e08e2e834ff5db0cbbba741d6bb69ef13c86e
+checksum {}
+
 depends_build		port:py${python.version}-setuptools
 depends_run			port:py${python.version}-rosinstall
-
-distname			wstool-${version}
-
-checksums           sha256  396b512ed5856375a5bfc4bea0a933fa9ee4300cb6807e9611fdf76849a3106a
 
 python.versions 27
 python.default_version 27

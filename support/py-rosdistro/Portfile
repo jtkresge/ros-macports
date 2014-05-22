@@ -5,20 +5,18 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-rosdistro
-version             0.3.4
+version             0.3.5
 categories          python
 platforms           darwin
 license             bsd
 maintainers         gmail.com:venabled
 description         This repo maintains the lists of repositories defining ROS distributions.
-
 homepage            https://github.com/ros/rosdistro
 
 fetch.type          git
 git.url             https://github.com/ros-infrastructure/rosdistro.git
-git.branch          dce80f72ae9c6a7372b798f354068de5496f66e2
+git.branch          1eb929bb2f715bd6cabf49bad165a31da5f5a589
 checksum {}
-
 
 depends_build       port:py${python.version}-setuptools
 depends_run         port:py${python.version}-yaml

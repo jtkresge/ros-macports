@@ -15,7 +15,7 @@ homepage            https://github.com/ros-infrastructure/rosdep
 
 fetch.type          git
 git.url             https://github.com/ros-infrastructure/rosdep.git
-git.branch          a3d84fcfaf82bad3693a423532860b3a63ebabe1
+git.branch          046cbbb7d794def7ade97e18c9d2f1e064509868
 checksum {}
 
 depends_run         port:py${python.version}-rospkg \
