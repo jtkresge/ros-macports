@@ -18,6 +18,8 @@ git.url             https://github.com/ros-infrastructure/rospkg.git
 git.branch          9462ebdb9c72233c80687ccc6fb38ed4ddfd60da
 checksum {}
 
+depends_build		port:py${python.version}-setuptools
+
 python.versions 27
 python.default_version 27
 python.link_binaries_suffix
