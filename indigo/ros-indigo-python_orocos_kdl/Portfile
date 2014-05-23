@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-python_orocos_kdl
 version             1.2.2
-revision             1
+revision             2
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,9 +26,9 @@ depends_lib         port:python27 \
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
 master_sites        https://github.com/smits/orocos-kdl-release/archive/release/indigo/python_orocos_kdl/
-distfiles           1.2.2-1.tar.gz
-worksrcdir          orocos-kdl-release-release-indigo-python_orocos_kdl-1.2.2-1
-checksums           sha256 da27509e1345fe60d598c4e9c3efc1cd0fcb5c7bfebf3a88b93394f4cb70360b
+distfiles           1.2.2-2.tar.gz
+worksrcdir          orocos-kdl-release-release-indigo-python_orocos_kdl-1.2.2-2
+checksums           sha256 58aae070e626753d7f073cc40fa42817e22b83cc5fb0a19640104e182339ba27
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -16,9 +16,9 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-indigo-lz4 \
+                    port:lz4 \
                     port:ros-indigo-catkin \
-                    port:ros-indigo-lz4
+                    port:lz4
 
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 

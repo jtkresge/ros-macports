@@ -47,8 +47,6 @@ checksums           sha256 897400fe4df3793487cab862d023bb89075c4200de98c1307cf76
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"
-# Needs a patch
-patchfiles      query.h.patch
 
 build {
 

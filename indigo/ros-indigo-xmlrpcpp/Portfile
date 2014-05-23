@@ -29,10 +29,6 @@ checksums           sha256 7db63d2c9bec5b1efcd4987fda0c73e4d1aaf35113a039eb5847d
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"
-configure.compiler clang
-patchfiles          base64.h.patch
-# override patch.pre_args since it defaults to -p0
-patch.pre_args     -p1
 
 build {
 
