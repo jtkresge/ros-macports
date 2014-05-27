@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-polled_camera
 version             1.11.3
-revision             0
+revision             1
 categories          devel
 platforms           darwin
 license             bsd
@@ -32,9 +32,9 @@ depends_lib         port:python27 \
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/indigo/polled_camera/
-distfiles           1.11.3-0.tar.gz
-worksrcdir          image_common-release-release-indigo-polled_camera-1.11.3-0
-checksums           sha256 54e4e54972249a0bca1d529c7b7fbf6d42a9fb9b46227576a81e23e03578ec73
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-indigo-polled_camera-1.11.3-1
+checksums           sha256 c5d0fd647c653b130a35b2843c9702255ed6c3687f64d11bbe68dadcdc38a55f
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

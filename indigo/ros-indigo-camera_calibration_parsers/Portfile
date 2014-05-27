@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-camera_calibration_parsers
 version             1.11.3
-revision             0
+revision             1
 categories          devel
 platforms           darwin
 license             bsd
@@ -28,9 +28,9 @@ depends_lib         port:python27 \
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/indigo/camera_calibration_parsers/
-distfiles           1.11.3-0.tar.gz
-worksrcdir          image_common-release-release-indigo-camera_calibration_parsers-1.11.3-0
-checksums           sha256 82aaa61551adb8f0f44085079727f436c687feb2c2f3f7b76d9ebe4f84263849
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-indigo-camera_calibration_parsers-1.11.3-1
+checksums           sha256 b2bcdb11dd88600a5613ac9d6a1cda5be77c0bb48be67a6eb09538451296d04d
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

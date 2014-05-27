@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-indigo-catkin
-version             0.6.4
-revision             1
+version             0.6.5
+revision             0
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,9 +21,9 @@ depends_lib         port:python27 \
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
 master_sites        https://github.com/ros-gbp/catkin-release/archive/release/indigo/catkin/
-distfiles           0.6.4-1.tar.gz
-worksrcdir          catkin-release-release-indigo-catkin-0.6.4-1
-checksums           sha256 6002f3ca99680e8dc594e8d3594922d9df270e1aa2d1b1616dfb680b97477def
+distfiles           0.6.5-0.tar.gz
+worksrcdir          catkin-release-release-indigo-catkin-0.6.5-0
+checksums           sha256 8a1e4950e81415a7c5e3e0e27d1afad55378d2a9ed6bbdd01a527fe4721fb26e
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -77,6 +77,10 @@ build {
           --install-space=${prefix} \
           --install"
 
+#We need to fix the rpath for the liblz4.dylib
+system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/librosbag.dylib"
+system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/rosbag/play"
+system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/rosbag/record"
 
 
      # Remove _setup_util.py, env.sh, setup.*, .catkin, .rosinstall unless

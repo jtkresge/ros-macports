@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-camera_info_manager
 version             1.11.3
-revision             0
+revision             1
 categories          devel
 platforms           darwin
 license             bsd
@@ -34,9 +34,9 @@ depends_lib         port:python27 \
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/indigo/camera_info_manager/
-distfiles           1.11.3-0.tar.gz
-worksrcdir          image_common-release-release-indigo-camera_info_manager-1.11.3-0
-checksums           sha256 c441eb39000895906dc772d29dfa644868633eaa63d3f11bb1cd0f1b241d73e7
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-indigo-camera_info_manager-1.11.3-1
+checksums           sha256 52d6386a2b8c97f2dd7133c0b2aacdbedf20a629f2f660608f6fea422a00219e
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

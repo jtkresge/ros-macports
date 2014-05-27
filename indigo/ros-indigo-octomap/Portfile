@@ -4,7 +4,7 @@
 PortSystem          1.0
 
 name                ros-indigo-octomap
-version             1.6.5
+version             1.6.6
 revision             0
 categories          devel
 platforms           darwin
@@ -22,9 +22,9 @@ depends_lib         port:python27 \
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
 master_sites        https://github.com/ros-gbp/octomap-release/archive/release/indigo/octomap/
-distfiles           1.6.5-0.tar.gz
-worksrcdir          octomap-release-release-indigo-octomap-1.6.5-0
-checksums           sha256 32f68f8457e6ecea5e7d88f3589a428a01810789f258c96596fce5c93288991a
+distfiles           1.6.6-0.tar.gz
+worksrcdir          octomap-release-release-indigo-octomap-1.6.6-0
+checksums           sha256 3f5d9b724ce0130aac93c4bab5f1fbd959af0f838ac14b2d2d04e946a8d5b4f3
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

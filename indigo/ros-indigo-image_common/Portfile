@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-image_common
 version             1.11.3
-revision             0
+revision             1
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,9 +25,9 @@ depends_lib         port:python27 \
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/indigo/image_common/
-distfiles           1.11.3-0.tar.gz
-worksrcdir          image_common-release-release-indigo-image_common-1.11.3-0
-checksums           sha256 6a6f861c16269191f65cfa7badf6723a3c71d735d63b03a008bd1f204bd59f01
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-indigo-image_common-1.11.3-1
+checksums           sha256 9a4631f1f0abcfdd6ceed6d1156efb608c1660cb0beca69516547ec8b7fabb5c
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

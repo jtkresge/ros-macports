@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-gazebo_msgs
 version             2.4.3
-revision             0
+revision             1
 categories          devel
 platforms           darwin
 license             bsd
@@ -35,9 +35,9 @@ depends_lib         port:python27 \
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
 master_sites        https://github.com/ros-gbp/gazebo_ros_pkgs-release/archive/release/indigo/gazebo_msgs/
-distfiles           2.4.3-0.tar.gz
-worksrcdir          gazebo_ros_pkgs-release-release-indigo-gazebo_msgs-2.4.3-0
-checksums           sha256 a6624e7b88d704ada46ac86d88ce6551d0abb603f4e83bab80e470c4182f3b9f
+distfiles           2.4.3-1.tar.gz
+worksrcdir          gazebo_ros_pkgs-release-release-indigo-gazebo_msgs-2.4.3-1
+checksums           sha256 fed61153238397d17253c95f62f7cc71a413fe695e25198193073a3d3f85e79c
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"
