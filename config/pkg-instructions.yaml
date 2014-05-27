@@ -16,3 +16,18 @@ typelib:
    post_catkin_build: |
         #We need to fix the rpath for the typelib_ruby.bundle
         system "install_name_tool -change /opt/local/lib/libtypeLang_cSupport.dylib /opt/local/lib/typelib/libtypeLang_cSupport.dylib ${destroot}/opt/local/lib/ruby1.9/1.9.1/x86_64-darwin12/typelib_ruby.bundle"
+roslz4:
+   post_catkin_build: |
+        #We need to fix the rpath for the liblz4.dylib
+        system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/libroslz4.dylib"
+        system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}$::env(PYTHONPATH)/roslz4/_roslz4.so"
+rosbag_storage:
+   post_catkin_build: |
+        #We need to fix the rpath for the liblz4.dylib
+        system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/librosbag_storage.dylib"
+rosbag:
+   post_catkin_build: |
+        #We need to fix the rpath for the liblz4.dylib
+        system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/librosbag.dylib"
+        system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/rosbag/play"
+        system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/rosbag/record"
