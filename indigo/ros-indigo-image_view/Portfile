@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-cv_bridge \
                     port:gtk2 \
                     port:ros-indigo-image_transport \
-                    port:ros-indigo-libopencv-dev \
+                    port:opencv \
                     port:ros-indigo-message_filters \
                     port:ros-indigo-nodelet \
                     port:ros-indigo-rosconsole \
@@ -33,7 +33,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-cv_bridge \
                     port:gtk2 \
                     port:ros-indigo-image_transport \
-                    port:ros-indigo-libopencv-dev \
+                    port:opencv \
                     port:ros-indigo-message_filters \
                     port:ros-indigo-nodelet \
                     port:ros-indigo-rosconsole \

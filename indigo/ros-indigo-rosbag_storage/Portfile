@@ -76,6 +76,7 @@ build {
 #We need to fix the rpath for the liblz4.dylib
 system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/librosbag_storage.dylib"
 
+
      # Remove _setup_util.py, env.sh, setup.*, .catkin, .rosinstall unless
      # this is catkin, as these files can only be installed once or macports
      # will complain of conflicts

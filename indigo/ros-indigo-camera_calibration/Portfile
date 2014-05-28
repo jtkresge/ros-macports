@@ -19,7 +19,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:ros-indigo-cv_bridge \
                     port:ros-indigo-image_geometry \
-                    port:ros-indigo-libopencv-dev \
+                    port:opencv \
                     port:ros-indigo-message_filters \
                     port:ros-indigo-rospy \
                     port:ros-indigo-std_srvs \

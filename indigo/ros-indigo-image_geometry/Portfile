@@ -16,12 +16,12 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-indigo-libopencv-dev \
-                    port:ros-indigo-python-opencv \
+                    port:opencv \
+                    port:opencv \
                     port:ros-indigo-sensor_msgs \
                     port:ros-indigo-catkin \
-                    port:ros-indigo-libopencv-dev \
-                    port:ros-indigo-python-opencv \
+                    port:opencv \
+                    port:opencv \
                     port:ros-indigo-sensor_msgs
 
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full

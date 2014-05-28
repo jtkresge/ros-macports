@@ -17,16 +17,16 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:boost \
-                    port:ros-indigo-libopencv-dev \
+                    port:opencv \
                     port:python27 \
-                    port:ros-indigo-python-opencv \
+                    port:opencv \
                     port:ros-indigo-rosconsole \
                     port:ros-indigo-sensor_msgs \
                     port:ros-indigo-catkin \
                     port:boost \
-                    port:ros-indigo-libopencv-dev \
+                    port:opencv \
                     port:python27 \
-                    port:ros-indigo-python-opencv \
+                    port:opencv \
                     port:ros-indigo-rosconsole \
                     port:ros-indigo-sensor_msgs
 

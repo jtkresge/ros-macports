@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-eigen_conversions \
                     port:ros-indigo-geometry_msgs \
                     port:ros-indigo-image_transport \
-                    port:ros-indigo-libopencv-dev \
+                    port:opencv \
                     port:ros-indigo-nodelet \
                     port:ros-indigo-roscpp \
                     port:ros-indigo-tf2 \
@@ -32,7 +32,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-cv_bridge \
                     port:ros-indigo-dynamic_reconfigure \
                     port:ros-indigo-image_transport \
-                    port:ros-indigo-libopencv-dev \
+                    port:opencv \
                     port:ros-indigo-nodelet \
                     port:ros-indigo-roscpp \
                     port:ros-indigo-tf2 \
