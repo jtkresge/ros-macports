@@ -16,7 +16,11 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:py27-empy 
+                    port:py27-empy \
+                    port:py27-catkin-pkg \
+                    port:py27-nose \
+                    port:ros-gtest \
+                    port:cmake
 
 conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
 
