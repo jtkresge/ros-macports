@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-image_common
-version             1.11.0
-revision             0
+version             1.11.3
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-image_transport \
                     port:ros-hydro-polled_camera
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-image_common ros-groovy-image_common
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/hydro/image_common/
-distfiles           1.11.0-0.tar.gz
-worksrcdir          image_common-release-release-hydro-image_common-1.11.0-0
-checksums           sha256 6af9ada2f2ddaf1d1f6286a80177868b67da05923811ef8bd504853a66cfabc6
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-hydro-image_common-1.11.3-1
+checksums           sha256 2bd75de5a92c57d2fc91b22ff465f3b9726c79d456a033c0941a17dd9a9432dc
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

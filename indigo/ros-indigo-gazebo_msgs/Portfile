@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-gazebo_msgs
 version             2.4.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -32,7 +32,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-std_srvs \
                     port:ros-indigo-message_generation
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-gazebo_msgs ros-groovy-gazebo_msgs
 
 master_sites        https://github.com/ros-gbp/gazebo_ros_pkgs-release/archive/release/indigo/gazebo_msgs/
 distfiles           2.4.3-1.tar.gz

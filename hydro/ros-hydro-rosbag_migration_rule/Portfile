@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-rosbag_migration_rule
 version             1.0.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,9 +16,9 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosbag_migration_rule ros-groovy-rosbag_migration_rule
 
 master_sites        https://github.com/ros-gbp/rosbag_migration_rule-release/archive/release/hydro/rosbag_migration_rule/
 distfiles           1.0.0-0.tar.gz

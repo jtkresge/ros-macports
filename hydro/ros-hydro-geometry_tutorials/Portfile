@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-geometry_tutorials
 version             0.2.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -19,7 +19,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-turtle_tf
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-geometry_tutorials ros-groovy-geometry_tutorials
 
 master_sites        https://github.com/ros-gbp/geometry_tutorials-release/archive/release/hydro/geometry_tutorials/
 distfiles           0.2.0-0.tar.gz

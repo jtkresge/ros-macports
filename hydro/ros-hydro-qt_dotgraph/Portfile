@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-qt_dotgraph
-version             0.2.18
-revision             0
+version             0.2.22
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,12 +20,12 @@ depends_lib         port:python27 \
                     port:py27-pydot \
                     port:ros-hydro-python_qt_binding
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-qt_dotgraph ros-groovy-qt_dotgraph
 
 master_sites        https://github.com/ros-gbp/qt_gui_core-release/archive/release/hydro/qt_dotgraph/
-distfiles           0.2.18-0.tar.gz
-worksrcdir          qt_gui_core-release-release-hydro-qt_dotgraph-0.2.18-0
-checksums           sha256 d1c46d0f3221ee3334bf2c74fab4ab8bf5cd2d1aedb3523bc3978498ebca0c1e
+distfiles           0.2.22-0.tar.gz
+worksrcdir          qt_gui_core-release-release-hydro-qt_dotgraph-0.2.22-0
+checksums           sha256 13d4d355b6f4bd2532d8edf4d402210d8d0f09f276deae11469e739097d6357d
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

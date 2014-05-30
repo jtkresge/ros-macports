@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-tf2_bullet
-version             0.4.7
-revision             0
+version             0.4.10
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,16 +20,17 @@ depends_lib         port:python27 \
                     port:bullet \
                     port:ros-hydro-geometry_msgs \
                     port:ros-hydro-catkin \
+                    port:pkgconfig \
                     port:ros-hydro-tf2 \
                     port:bullet \
                     port:ros-hydro-geometry_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-tf2_bullet ros-groovy-tf2_bullet
 
 master_sites        https://github.com/ros-gbp/geometry_experimental-release/archive/release/hydro/tf2_bullet/
-distfiles           0.4.7-0.tar.gz
-worksrcdir          geometry_experimental-release-release-hydro-tf2_bullet-0.4.7-0
-checksums           sha256 a992fd1dec3d63f810a28c008878e384a59893392d33b2e873e87c02035afd21
+distfiles           0.4.10-0.tar.gz
+worksrcdir          geometry_experimental-release-release-hydro-tf2_bullet-0.4.10-0
+checksums           sha256 47e341820f20f5bdbc5c1afa1ad314364dc4a7bb618e44c3de10c7a98a25aca3
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

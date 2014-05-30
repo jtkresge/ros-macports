@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-stage_ros
 version             1.7.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -37,7 +37,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-std_msgs \
                     port:ros-indigo-tf
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-stage_ros ros-groovy-stage_ros
 
 master_sites        https://github.com/ros-gbp/stage_ros-release/archive/release/indigo/stage_ros/
 distfiles           1.7.2-0.tar.gz

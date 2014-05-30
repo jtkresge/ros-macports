@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-pluginlib
 version             1.10.0
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -29,7 +29,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-roslib \
                     port:tinyxml
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-pluginlib ros-groovy-pluginlib
 
 master_sites        https://github.com/ros-gbp/pluginlib-release/archive/release/indigo/pluginlib/
 distfiles           1.10.0-1.tar.gz

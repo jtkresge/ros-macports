@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-tf_conversions
-version             1.10.6
-revision             0
+version             1.10.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -19,19 +19,22 @@ depends_lib         port:python27 \
                     port:eigen3 \
                     port:ros-hydro-geometry_msgs \
                     port:ros-hydro-kdl_conversions \
+                    port:ros-hydro-orocos_kdl \
                     port:ros-hydro-tf \
                     port:ros-hydro-catkin \
                     port:eigen3 \
                     port:ros-hydro-geometry_msgs \
                     port:ros-hydro-kdl_conversions \
+                    port:ros-hydro-orocos_kdl \
+                    port:ros-hydro-python_orocos_kdl \
                     port:ros-hydro-tf
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-tf_conversions ros-groovy-tf_conversions
 
 master_sites        https://github.com/ros-gbp/geometry-release/archive/release/hydro/tf_conversions/
-distfiles           1.10.6-0.tar.gz
-worksrcdir          geometry-release-release-hydro-tf_conversions-1.10.6-0
-checksums           sha256 ac828f35afe9e4ed582c4355d14e1bd7f6da178de81ef619ea62d49db8f6b860
+distfiles           1.10.8-0.tar.gz
+worksrcdir          geometry-release-release-hydro-tf_conversions-1.10.8-0
+checksums           sha256 972543c0d2990d4451c299d782fd68ad3ddebc708d1ac588f99f1690047e8dc0
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

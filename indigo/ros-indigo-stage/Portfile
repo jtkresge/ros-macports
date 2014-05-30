@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-stage
 version             4.1.1
-revision             2
+revision            2
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,14 +21,15 @@ depends_lib         port:python27 \
                     port:jpeg \
                     port:libtool \
                     port:opengl \
-                    port:ros-indigo-catkin \
+                    port:cmake \
+                    port:pkgconfig \
                     port:ros-indigo-catkin \
                     port:gtk2 \
                     port:fltk \
                     port:jpeg \
                     port:opengl
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-stage ros-groovy-stage
 
 master_sites        https://github.com/ros-gbp/stage-release/archive/release/indigo/stage/
 distfiles           4.1.1-2.tar.gz

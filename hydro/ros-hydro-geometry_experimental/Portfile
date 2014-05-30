@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-geometry_experimental
-version             0.4.7
-revision             0
+version             0.4.10
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,12 +25,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-tf2_ros \
                     port:ros-hydro-tf2_tools
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-geometry_experimental ros-groovy-geometry_experimental
 
 master_sites        https://github.com/ros-gbp/geometry_experimental-release/archive/release/hydro/geometry_experimental/
-distfiles           0.4.7-0.tar.gz
-worksrcdir          geometry_experimental-release-release-hydro-geometry_experimental-0.4.7-0
-checksums           sha256 586eb9946641531d748b0c46869987dee8528d0faa6c09f4b7fb96b77b13f1d3
+distfiles           0.4.10-0.tar.gz
+worksrcdir          geometry_experimental-release-release-hydro-geometry_experimental-0.4.10-0
+checksums           sha256 4899ead1d8ebc7616096433352fdfa3338bc7188009d3b9a0213de1c65059937
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

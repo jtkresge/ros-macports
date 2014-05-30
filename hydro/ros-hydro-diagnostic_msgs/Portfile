@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-diagnostic_msgs
-version             1.10.2
-revision             0
+version             1.10.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_runtime \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-diagnostic_msgs ros-groovy-diagnostic_msgs
 
 master_sites        https://github.com/ros-gbp/common_msgs-release/archive/release/hydro/diagnostic_msgs/
-distfiles           1.10.2-0.tar.gz
-worksrcdir          common_msgs-release-release-hydro-diagnostic_msgs-1.10.2-0
-checksums           sha256 dc0407f15bc83b2b97663630d3c3f44345a346b1ef98197ff0b4f01fb20c294b
+distfiles           1.10.6-0.tar.gz
+worksrcdir          common_msgs-release-release-hydro-diagnostic_msgs-1.10.6-0
+checksums           sha256 6882a25eb3c17e50e6b67f4f1087167e16d1166be3a935eecf59b00457319d36
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

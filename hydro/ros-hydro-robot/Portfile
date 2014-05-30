@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-robot
 version             1.0.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -34,7 +34,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-ros_base \
                     port:ros-hydro-xacro
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-robot ros-groovy-robot
 
 master_sites        https://github.com/ros-gbp/metapackages-release/archive/release/hydro/robot/
 distfiles           1.0.2-0.tar.gz

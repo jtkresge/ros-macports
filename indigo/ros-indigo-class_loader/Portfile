@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-class_loader
 version             0.2.5
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-console_bridge \
                     port:poco
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-class_loader ros-groovy-class_loader
 
 master_sites        https://github.com/ros-gbp/class_loader-release/archive/release/indigo/class_loader/
 distfiles           0.2.5-1.tar.gz

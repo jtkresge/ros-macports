@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-camera_calibration_parsers
 version             1.11.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,7 +25,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-sensor_msgs \
                     port:yaml-cpp
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-camera_calibration_parsers ros-groovy-camera_calibration_parsers
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/indigo/camera_calibration_parsers/
 distfiles           1.11.3-1.tar.gz

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-roscpp_traits
-version             0.3.16
-revision             0
+version             0.4.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,14 +17,15 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:ros-hydro-catkin \
+                    port:ros-hydro-cpp_common \
                     port:ros-hydro-rostime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-roscpp_traits ros-groovy-roscpp_traits
 
 master_sites        https://github.com/ros-gbp/roscpp_core-release/archive/release/hydro/roscpp_traits/
-distfiles           0.3.16-0.tar.gz
-worksrcdir          roscpp_core-release-release-hydro-roscpp_traits-0.3.16-0
-checksums           sha256 09695bce737d66161d3bdd73d2534c2b401fb227f9bb895a34263dc1c324ecf0
+distfiles           0.4.3-0.tar.gz
+worksrcdir          roscpp_core-release-release-hydro-roscpp_traits-0.4.3-0
+checksums           sha256 219a0ec07755c0de06d34c4506b29a2739b3aa977abd94ba401a9688b154c39d
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

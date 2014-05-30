@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-tf2_kdl
-version             0.4.7
-revision             0
+version             0.4.10
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,14 +24,15 @@ depends_lib         port:python27 \
                     port:eigen3 \
                     port:ros-hydro-orocos_kdl \
                     port:ros-hydro-tf2 \
-                    port:ros-hydro-tf2_ros
+                    port:ros-hydro-tf2_ros \
+                    port:ros-hydro-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-tf2_kdl ros-groovy-tf2_kdl
 
 master_sites        https://github.com/ros-gbp/geometry_experimental-release/archive/release/hydro/tf2_kdl/
-distfiles           0.4.7-0.tar.gz
-worksrcdir          geometry_experimental-release-release-hydro-tf2_kdl-0.4.7-0
-checksums           sha256 bbc760c2e78dc49c6beccb76e6bcdef035792ca45e9a1dab31f3eecd79c4aa52
+distfiles           0.4.10-0.tar.gz
+worksrcdir          geometry_experimental-release-release-hydro-tf2_kdl-0.4.10-0
+checksums           sha256 71b0158126a323c055ce689f364da22c3c2294d9039025c4a598abe16316604e
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

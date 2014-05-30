@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-resource_retriever
 version             1.11.0
-revision             2
+revision            2
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,7 +24,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rosconsole \
                     port:ros-indigo-roslib
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-resource_retriever ros-groovy-resource_retriever
 
 master_sites        https://github.com/ros-gbp/resource_retriever-release/archive/release/indigo/resource_retriever/
 distfiles           1.11.0-2.tar.gz

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-roscpp_tutorials
-version             0.4.2
-revision             0
+version             0.4.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,12 +30,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rostime \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-roscpp_tutorials ros-groovy-roscpp_tutorials
 
 master_sites        https://github.com/ros-gbp/ros_tutorials-release/archive/release/hydro/roscpp_tutorials/
-distfiles           0.4.2-0.tar.gz
-worksrcdir          ros_tutorials-release-release-hydro-roscpp_tutorials-0.4.2-0
-checksums           sha256 b3f9be110b71a97c5508bc023c81e9877593a74e4325f7f91bcf156bb470fd6f
+distfiles           0.4.3-0.tar.gz
+worksrcdir          ros_tutorials-release-release-hydro-roscpp_tutorials-0.4.3-0
+checksums           sha256 d815196e64a484342a09321719038565550e9c728f0c41bb81e8d93752447b84
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

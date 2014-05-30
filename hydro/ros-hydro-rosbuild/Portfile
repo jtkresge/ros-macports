@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosbuild
-version             1.10.7
-revision             0
+version             1.10.9
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_generation \
                     port:ros-hydro-message_runtime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosbuild ros-groovy-rosbuild
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/hydro/rosbuild/
-distfiles           1.10.7-0.tar.gz
-worksrcdir          ros-release-release-hydro-rosbuild-1.10.7-0
-checksums           sha256 5c51d932b3f1406d9f7681e23013fda273035611ef5c8d570784cf7f38db8888
+distfiles           1.10.9-0.tar.gz
+worksrcdir          ros-release-release-hydro-rosbuild-1.10.9-0
+checksums           sha256 94c5d5b8781d0d89506fc288ece41a70a04109d945913449d9129e0808a4ba4e
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

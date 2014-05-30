@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-genmsg
-version             0.4.23
-revision             0
+version             0.4.25
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,14 +16,14 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-genmsg ros-groovy-genmsg
 
 master_sites        https://github.com/ros-gbp/genmsg-release/archive/release/hydro/genmsg/
-distfiles           0.4.23-0.tar.gz
-worksrcdir          genmsg-release-release-hydro-genmsg-0.4.23-0
-checksums           sha256 22531c3053450be79f9089a66ac2c9105a394220129e5b524f3b8a6d425f0b22
+distfiles           0.4.25-0.tar.gz
+worksrcdir          genmsg-release-release-hydro-genmsg-0.4.25-0
+checksums           sha256 fca742fcbda2d2b080699b5edaf23745a54a605781ab74bc762d95267be9d011
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

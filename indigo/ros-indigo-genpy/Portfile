@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-genpy
 version             0.5.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:ros-indigo-genmsg
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-genpy ros-groovy-genpy
 
 master_sites        https://github.com/ros-gbp/genpy-release/archive/release/indigo/genpy/
 distfiles           0.5.2-0.tar.gz

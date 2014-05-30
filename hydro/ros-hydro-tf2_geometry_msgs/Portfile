@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-tf2_geometry_msgs
-version             0.4.7
-revision             0
+version             0.4.10
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,14 +24,15 @@ depends_lib         port:python27 \
                     port:ros-hydro-geometry_msgs \
                     port:ros-hydro-tf2_ros \
                     port:ros-hydro-tf2 \
-                    port:ros-hydro-orocos_kdl
+                    port:ros-hydro-orocos_kdl \
+                    port:ros-hydro-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-tf2_geometry_msgs ros-groovy-tf2_geometry_msgs
 
 master_sites        https://github.com/ros-gbp/geometry_experimental-release/archive/release/hydro/tf2_geometry_msgs/
-distfiles           0.4.7-0.tar.gz
-worksrcdir          geometry_experimental-release-release-hydro-tf2_geometry_msgs-0.4.7-0
-checksums           sha256 bb4afebe0ab1c2bf8abc760b509562a4c7fdc619f0c15f3d25ae531bf066dff9
+distfiles           0.4.10-0.tar.gz
+worksrcdir          geometry_experimental-release-release-hydro-tf2_geometry_msgs-0.4.10-0
+checksums           sha256 8c4176fc85b8a7dc844e4f31c903197c9f4a773a56608b8c165c6f55784bcbe0
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

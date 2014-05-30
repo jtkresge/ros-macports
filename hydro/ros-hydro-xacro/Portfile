@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-xacro
-version             1.8.4
-revision             0
+version             1.8.5
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,15 +16,17 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
+                    port:ros-hydro-roslint \
                     port:ros-hydro-catkin \
-                    port:ros-hydro-roslaunch
+                    port:ros-hydro-roslaunch \
+                    port:ros-hydro-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-xacro ros-groovy-xacro
 
 master_sites        https://github.com/ros-gbp/xacro-release/archive/release/hydro/xacro/
-distfiles           1.8.4-0.tar.gz
-worksrcdir          xacro-release-release-hydro-xacro-1.8.4-0
-checksums           sha256 096d1f0b8d0216e5ff6835b38a84aec35801e3d55df78ff9e28929bba5f423d6
+distfiles           1.8.5-0.tar.gz
+worksrcdir          xacro-release-release-hydro-xacro-1.8.5-0
+checksums           sha256 501d3a73442ec1d7a932a4a87c440ede05e73b0c48aa68694cc5da93038f6056
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

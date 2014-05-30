@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-geometry
-version             1.10.6
-revision             0
+version             1.10.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,12 +23,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-tf \
                     port:ros-hydro-tf_conversions
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-geometry ros-groovy-geometry
 
 master_sites        https://github.com/ros-gbp/geometry-release/archive/release/hydro/geometry/
-distfiles           1.10.6-0.tar.gz
-worksrcdir          geometry-release-release-hydro-geometry-1.10.6-0
-checksums           sha256 6bac40b300c7f00bdc1cad1b79d17d72cfe158929c3f46e25e712fb98edc7013
+distfiles           1.10.8-0.tar.gz
+worksrcdir          geometry-release-release-hydro-geometry-1.10.8-0
+checksums           sha256 a9138fdcf0f583083871d1be4ea3ac7b7f657a273e25e748232d48157251f507
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

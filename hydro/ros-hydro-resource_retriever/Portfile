@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-resource_retriever
-version             1.10.15
-revision             0
+version             1.10.18
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,12 +24,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rosconsole \
                     port:ros-hydro-roslib
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-resource_retriever ros-groovy-resource_retriever
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/hydro/resource_retriever/
-distfiles           1.10.15-0.tar.gz
-worksrcdir          robot_model-release-release-hydro-resource_retriever-1.10.15-0
-checksums           sha256 11579a5b9eb88cc261a59c363553fbc0f5f8886548e3c4085610b066a973d9f2
+distfiles           1.10.18-1.tar.gz
+worksrcdir          robot_model-release-release-hydro-resource_retriever-1.10.18-1
+checksums           sha256 d57451f54dfed4177c0ce9eacf829886985706ad728c5d1afb77e6668fcc3860
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

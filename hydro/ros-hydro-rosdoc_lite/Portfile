@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosdoc_lite
-version             0.2.3
-revision             0
+version             0.2.4
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,12 +26,12 @@ depends_lib         port:python27 \
                     port:py27-sphinx \
                     port:py27-yaml
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosdoc_lite ros-groovy-rosdoc_lite
 
 master_sites        https://github.com/ros-gbp/rosdoc_lite-release/archive/release/hydro/rosdoc_lite/
-distfiles           0.2.3-0.tar.gz
-worksrcdir          rosdoc_lite-release-release-hydro-rosdoc_lite-0.2.3-0
-checksums           sha256 d4c8513f88d4b395accca54d34844c632efdd47896f9374e2962f8d3bb837df4
+distfiles           0.2.4-0.tar.gz
+worksrcdir          rosdoc_lite-release-release-hydro-rosdoc_lite-0.2.4-0
+checksums           sha256 87f3f6fbb5af1e79537b8c70a1647ed10e4cbe19223ce0bfc7bebd1baa02f7aa
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

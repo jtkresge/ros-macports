@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-stage
 version             4.1.1
-revision             4
+revision            6
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,19 +21,20 @@ depends_lib         port:python27 \
                     port:jpeg \
                     port:libtool \
                     port:opengl \
-                    port:ros-hydro-catkin \
+                    port:cmake \
+                    port:pkgconfig \
                     port:ros-hydro-catkin \
                     port:gtk2 \
                     port:fltk \
                     port:jpeg \
                     port:opengl
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-stage ros-groovy-stage
 
 master_sites        https://github.com/ros-gbp/stage-release/archive/release/hydro/stage/
-distfiles           4.1.1-4.tar.gz
-worksrcdir          stage-release-release-hydro-stage-4.1.1-4
-checksums           sha256 d9f9a68c018afa537235558d8eed21c6e80dc72a1c502a54a8224a26a194a02a
+distfiles           4.1.1-6.tar.gz
+worksrcdir          stage-release-release-hydro-stage-4.1.1-6
+checksums           sha256 dbb88f0ec07b6e7999d23c5703a85abe878a6f40c547c166949e2202e724d708
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

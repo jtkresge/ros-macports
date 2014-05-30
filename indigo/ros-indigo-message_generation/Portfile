@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-message_generation
 version             0.2.10
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-genmsg \
                     port:ros-indigo-genpy
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-message_generation ros-groovy-message_generation
 
 master_sites        https://github.com/ros-gbp/message_generation-release/archive/release/indigo/message_generation/
 distfiles           0.2.10-0.tar.gz

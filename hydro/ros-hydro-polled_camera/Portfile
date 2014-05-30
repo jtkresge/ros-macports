@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-polled_camera
-version             1.11.0
-revision             0
+version             1.11.3
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -29,12 +29,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-sensor_msgs \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-polled_camera ros-groovy-polled_camera
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/hydro/polled_camera/
-distfiles           1.11.0-0.tar.gz
-worksrcdir          image_common-release-release-hydro-polled_camera-1.11.0-0
-checksums           sha256 077752247082db07c715568c03bf9af35aca90c1231bab33f4b234202484dbdb
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-hydro-polled_camera-1.11.3-1
+checksums           sha256 d29ffbe0c7674bb1ff6ccb14c9dd4965a57e2d432c7bdf15b4665910c372181c
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

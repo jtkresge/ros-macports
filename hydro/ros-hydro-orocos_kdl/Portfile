@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-orocos_kdl
-version             1.1.102
-revision             0
+version             1.2.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,17 +17,18 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:eigen3 \
-                    port:ros-hydro-catkin \
+                    port:cmake \
                     port:ros-hydro-catkin \
                     port:eigen3 \
-                    port:pkgconfig
+                    port:pkgconfig \
+                    port:cppunit
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-orocos_kdl ros-groovy-orocos_kdl
 
 master_sites        https://github.com/smits/orocos-kdl-release/archive/release/hydro/orocos_kdl/
-distfiles           1.1.102-0.tar.gz
-worksrcdir          orocos-kdl-release-release-hydro-orocos_kdl-1.1.102-0
-checksums           sha256 dd57564d5273fba15fd7925b08459f03ebb0ce0d65e18e72877ce2d7810bf0d7
+distfiles           1.2.2-0.tar.gz
+worksrcdir          orocos-kdl-release-release-hydro-orocos_kdl-1.2.2-0
+checksums           sha256 5e4ad9b827f46650c8653edce305f0af669c90f505c302db166d26aa866d78eb
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-roslang
-version             1.10.7
-revision             0
+version             1.10.9
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,12 +20,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-genmsg
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-roslang ros-groovy-roslang
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/hydro/roslang/
-distfiles           1.10.7-0.tar.gz
-worksrcdir          ros-release-release-hydro-roslang-1.10.7-0
-checksums           sha256 4e211b371872a95b63ad6db8562b739c619f7f0d277a407d3926c5ee763fe4eb
+distfiles           1.10.9-0.tar.gz
+worksrcdir          ros-release-release-hydro-roslang-1.10.9-0
+checksums           sha256 b1d996ae342e7eb0ce2ca00e5e9b433ef4e21403859d302fa9ef1d6e46d6048a
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

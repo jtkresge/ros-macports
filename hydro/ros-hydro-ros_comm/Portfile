@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-ros_comm
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -40,12 +40,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-roswtf \
                     port:ros-hydro-xmlrpcpp
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-ros_comm ros-groovy-ros_comm
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/ros_comm/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-ros_comm-1.9.50-0
-checksums           sha256 23ea96c2c6deae7beb93f168593efc90373ab1ec8c57238d52372067e0f739c4
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-ros_comm-1.10.2-0
+checksums           sha256 e5d85d4b17d28680b9d3af147c627bed2ec4eda60741c32957f9264c26364905
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

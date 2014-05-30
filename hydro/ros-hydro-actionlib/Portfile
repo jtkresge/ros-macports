@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-actionlib
 version             1.10.3
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,9 +30,10 @@ depends_lib         port:python27 \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-rospy \
                     port:ros-hydro-rostest \
-                    port:ros-hydro-std_msgs
+                    port:ros-hydro-std_msgs \
+                    port:ros-hydro-rosnode
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-actionlib ros-groovy-actionlib
 
 master_sites        https://github.com/ros-gbp/actionlib-release/archive/release/hydro/actionlib/
 distfiles           1.10.3-0.tar.gz

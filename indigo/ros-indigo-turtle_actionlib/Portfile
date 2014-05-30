@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-turtle_actionlib
 version             0.1.7
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -34,7 +34,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-std_msgs \
                     port:ros-indigo-turtlesim
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-turtle_actionlib ros-groovy-turtle_actionlib
 
 master_sites        https://github.com/ros-gbp/common_tutorials-release/archive/release/indigo/turtle_actionlib/
 distfiles           0.1.7-0.tar.gz

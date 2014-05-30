@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-qt_gui_app
-version             0.2.18
-revision             0
+version             0.2.22
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -19,12 +19,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-qt_gui
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-qt_gui_app ros-groovy-qt_gui_app
 
 master_sites        https://github.com/ros-gbp/qt_gui_core-release/archive/release/hydro/qt_gui_app/
-distfiles           0.2.18-0.tar.gz
-worksrcdir          qt_gui_core-release-release-hydro-qt_gui_app-0.2.18-0
-checksums           sha256 7df4ae7d594c51ac1849434a7b0cfc81dd4f30ccfcfc4cf41e1fdbc8848c49e7
+distfiles           0.2.22-0.tar.gz
+worksrcdir          qt_gui_core-release-release-hydro-qt_gui_app-0.2.22-0
+checksums           sha256 ae8bb86aa9d6128a8bb953075f9c9d9346c89d4098470215c8f8edb7895d7ad2
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

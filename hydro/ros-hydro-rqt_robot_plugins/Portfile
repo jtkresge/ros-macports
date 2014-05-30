@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rqt_robot_plugins
-version             0.3.1
-revision             0
+version             0.3.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -27,12 +27,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rqt_rviz \
                     port:ros-hydro-rqt_tf_tree
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rqt_robot_plugins ros-groovy-rqt_robot_plugins
 
 master_sites        https://github.com/ros-gbp/rqt_robot_plugins-release/archive/release/hydro/rqt_robot_plugins/
-distfiles           0.3.1-0.tar.gz
-worksrcdir          rqt_robot_plugins-release-release-hydro-rqt_robot_plugins-0.3.1-0
-checksums           sha256 11d7692ae161090b3a3ca8e66e479dfcb6137e739add123babc7ee3306614726
+distfiles           0.3.3-0.tar.gz
+worksrcdir          rqt_robot_plugins-release-release-hydro-rqt_robot_plugins-0.3.3-0
+checksums           sha256 cdf300f6f85d474a192d1361394827e51ac4fcd838836070d71a7599493068bf
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

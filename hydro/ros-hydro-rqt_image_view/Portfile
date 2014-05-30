@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rqt_image_view
-version             0.3.1
-revision             0
+version             0.3.4
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -28,12 +28,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rqt_gui_cpp \
                     port:ros-hydro-sensor_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rqt_image_view ros-groovy-rqt_image_view
 
 master_sites        https://github.com/ros-gbp/rqt_common_plugins-release/archive/release/hydro/rqt_image_view/
-distfiles           0.3.1-0.tar.gz
-worksrcdir          rqt_common_plugins-release-release-hydro-rqt_image_view-0.3.1-0
-checksums           sha256 07e07f39cf751b629334ad42433cfa47560c831deb3cc6301d95f7936a6d128a
+distfiles           0.3.4-0.tar.gz
+worksrcdir          rqt_common_plugins-release-release-hydro-rqt_image_view-0.3.4-0
+checksums           sha256 b43a8ec714e24607c93af8ee39a05da7a2a7633ed66152d5da5ea67970bfa243
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

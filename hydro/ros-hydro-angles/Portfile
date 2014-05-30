@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-angles
 version             1.9.9
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,9 +16,9 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-angles ros-groovy-angles
 
 master_sites        https://github.com/ros-gbp/geometry_angles_utils-release/archive/release/hydro/angles/
 distfiles           1.9.9-0.tar.gz

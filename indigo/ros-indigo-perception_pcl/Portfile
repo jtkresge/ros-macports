@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-perception_pcl
 version             1.2.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,7 +21,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-pcl_msgs \
                     port:ros-indigo-pcl_ros
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-perception_pcl ros-groovy-perception_pcl
 
 master_sites        https://github.com/ros-gbp/perception_pcl-release/archive/release/indigo/perception_pcl/
 distfiles           1.2.0-0.tar.gz

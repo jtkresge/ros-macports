@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-nodelet_topic_tools
 version             1.8.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,7 +26,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-pluginlib \
                     port:ros-indigo-roscpp
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-nodelet_topic_tools ros-groovy-nodelet_topic_tools
 
 master_sites        https://github.com/ros-gbp/nodelet_core-release/archive/release/indigo/nodelet_topic_tools/
 distfiles           1.8.3-1.tar.gz

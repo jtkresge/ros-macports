@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-vision_opencv
 version             1.11.2
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-cv_bridge \
                     port:ros-indigo-image_geometry
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-vision_opencv ros-groovy-vision_opencv
 
 master_sites        https://github.com/ros-gbp/vision_opencv-release/archive/release/indigo/vision_opencv/
 distfiles           1.11.2-1.tar.gz

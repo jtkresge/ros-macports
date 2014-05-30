@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-joint_state_publisher
-version             1.10.15
-revision             0
+version             1.10.18
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,12 +24,12 @@ depends_lib         port:python27 \
                     port:py27-wxpython-3.0 \
                     port:ros-hydro-sensor_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-joint_state_publisher ros-groovy-joint_state_publisher
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/hydro/joint_state_publisher/
-distfiles           1.10.15-0.tar.gz
-worksrcdir          robot_model-release-release-hydro-joint_state_publisher-1.10.15-0
-checksums           sha256 f50a665c51c1a493865cf7ea781016a6fd352b5d9df8ba3a8b5148e72d464d1f
+distfiles           1.10.18-1.tar.gz
+worksrcdir          robot_model-release-release-hydro-joint_state_publisher-1.10.18-1
+checksums           sha256 2700b74b3d469fbf6a5ad01b2df7c64c86cddb2037075eb6b57c83b206e08d85
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

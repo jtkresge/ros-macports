@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-catkin
-version             0.5.77
-revision             0
+version             0.5.86
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,18 +22,19 @@ depends_lib         port:python27 \
                     port:py27-empy \
                     port:py27-nose \
                     port:cmake \
+                    port:cmake \
                     port:ros-gtest \
                     port:python27 \
                     port:py27-catkin-pkg \
                     port:py27-empy \
                     port:py27-nose
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-catkin ros-groovy-catkin
 
 master_sites        https://github.com/ros-gbp/catkin-release/archive/release/hydro/catkin/
-distfiles           0.5.77-0.tar.gz
-worksrcdir          catkin-release-release-hydro-catkin-0.5.77-0
-checksums           sha256 a36980aee87f2367ac1863093865ad0296ccefcb5486659cb4059a03b448d113
+distfiles           0.5.86-0.tar.gz
+worksrcdir          catkin-release-release-hydro-catkin-0.5.86-0
+checksums           sha256 c21c3178b75e04993e865b9fea0c274051ca3824947acc0be6df6150afb7e4b3
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-visualization_tutorials
 version             0.8.4
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,7 +23,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-rviz_python_tutorial \
                     port:ros-hydro-visualization_marker_tutorials
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-visualization_tutorials ros-groovy-visualization_tutorials
 
 master_sites        https://github.com/ros-gbp/visualization_tutorials-release/archive/release/hydro/visualization_tutorials/
 distfiles           0.8.4-0.tar.gz

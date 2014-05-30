@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-qt_gui
 version             0.2.24
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,7 +23,7 @@ depends_lib         port:python27 \
                     port:py27-rospkg \
                     port:tango-icon-theme
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-qt_gui ros-groovy-qt_gui
 
 master_sites        https://github.com/ros-gbp/qt_gui_core-release/archive/release/indigo/qt_gui/
 distfiles           0.2.24-0.tar.gz

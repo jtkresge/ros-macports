@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-image_rotate
-version             1.11.3
-revision             0
+version             1.11.10
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,20 +23,29 @@ depends_lib         port:python27 \
                     port:opencv \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-tf \
+                    port:ros-hydro-tf2_ros \
+                    port:ros-hydro-nodelet \
+                    port:ros-hydro-eigen_conversions \
+                    port:ros-hydro-tf_conversions \
                     port:ros-hydro-catkin \
                     port:ros-hydro-cv_bridge \
                     port:ros-hydro-dynamic_reconfigure \
                     port:ros-hydro-image_transport \
                     port:opencv \
                     port:ros-hydro-roscpp \
-                    port:ros-hydro-tf
+                    port:ros-hydro-tf \
+                    port:ros-hydro-tf2_ros \
+                    port:ros-hydro-nodelet \
+                    port:ros-hydro-eigen_conversions \
+                    port:ros-hydro-tf_conversions \
+                    port:ros-hydro-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-image_rotate ros-groovy-image_rotate
 
 master_sites        https://github.com/ros-gbp/image_pipeline-release/archive/release/hydro/image_rotate/
-distfiles           1.11.3-0.tar.gz
-worksrcdir          image_pipeline-release-release-hydro-image_rotate-1.11.3-0
-checksums           sha256 c6bd524b76e1155bacedb769450c73798e7e2140702ae02f0f6789a1b8d71a07
+distfiles           1.11.10-0.tar.gz
+worksrcdir          image_pipeline-release-release-hydro-image_rotate-1.11.10-0
+checksums           sha256 93a92afc68896ca24eabba3e1debfe4bc3917c1b8940e168693d653eaf65e818
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

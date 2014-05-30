@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rqt_gui
-version             0.2.12
-revision             0
+version             0.2.14
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,12 +21,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-qt_gui
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rqt_gui ros-groovy-rqt_gui
 
 master_sites        https://github.com/ros-gbp/rqt-release/archive/release/hydro/rqt_gui/
-distfiles           0.2.12-0.tar.gz
-worksrcdir          rqt-release-release-hydro-rqt_gui-0.2.12-0
-checksums           sha256 7b24203be071dd60491e91ba3640bea25f52a4a523242463a996be5c39d8c476
+distfiles           0.2.14-0.tar.gz
+worksrcdir          rqt-release-release-hydro-rqt_gui-0.2.14-0
+checksums           sha256 8e8431622d281e294696ab7230e33e48bc3c1ca04b8cdd37007feef7fd3a6698
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

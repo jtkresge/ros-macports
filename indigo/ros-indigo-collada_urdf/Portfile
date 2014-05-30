@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-collada_urdf
 version             1.11.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -41,7 +41,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-tf \
                     port:ros-indigo-geometric_shapes
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-collada_urdf ros-groovy-collada_urdf
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/indigo/collada_urdf/
 distfiles           1.11.2-0.tar.gz

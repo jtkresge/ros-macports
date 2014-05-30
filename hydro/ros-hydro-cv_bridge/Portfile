@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-cv_bridge
-version             1.10.9
-revision             0
+version             1.10.17
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,12 +26,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rosconsole \
                     port:ros-hydro-sensor_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-cv_bridge ros-groovy-cv_bridge
 
 master_sites        https://github.com/ros-gbp/vision_opencv-release/archive/release/hydro/cv_bridge/
-distfiles           1.10.9-0.tar.gz
-worksrcdir          vision_opencv-release-release-hydro-cv_bridge-1.10.9-0
-checksums           sha256 efb8b1e0299f054d3d7a0680aad4e6a601fc224082703083d0f02b7424e314a1
+distfiles           1.10.17-1.tar.gz
+worksrcdir          vision_opencv-release-release-hydro-cv_bridge-1.10.17-1
+checksums           sha256 c641e167e7a726d181673644ed92f63a366e7a714fe7a66e5244ee52b37884a3
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

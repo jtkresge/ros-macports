@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-cmake_modules
-version             0.1.0
-revision             0
+version             0.2.1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,14 +16,14 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-cmake_modules ros-groovy-cmake_modules
 
 master_sites        https://github.com/ros-gbp/cmake_modules-release/archive/release/hydro/cmake_modules/
-distfiles           0.1.0-0.tar.gz
-worksrcdir          cmake_modules-release-release-hydro-cmake_modules-0.1.0-0
-checksums           sha256 d94cc718312c6c7f808f9cbec7d299db45bae718d550012323411ca902d54132
+distfiles           0.2.1-1.tar.gz
+worksrcdir          cmake_modules-release-release-hydro-cmake_modules-0.2.1-1
+checksums           sha256 b4f15c94579952a684c62ef3e86d3a3178a2af327a793a97d2202bccd4b0181b
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

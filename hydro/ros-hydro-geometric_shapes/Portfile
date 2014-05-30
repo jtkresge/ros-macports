@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-geometric_shapes
-version             0.3.5
-revision             0
+version             0.3.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-shape_msgs \
                     port:ros-hydro-shape_tools \
                     port:ros-hydro-octomap \
-                    port:assimp \
+                    port:ros-hydro-assimp-dev \
                     port:eigen3 \
                     port:qhull \
                     port:ros-hydro-console_bridge \
@@ -40,12 +40,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-eigen_stl_containers \
                     port:ros-hydro-resource_retriever
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-geometric_shapes ros-groovy-geometric_shapes
 
 master_sites        https://github.com/ros-gbp/geometric_shapes-release/archive/release/hydro/geometric_shapes/
-distfiles           0.3.5-0.tar.gz
-worksrcdir          geometric_shapes-release-release-hydro-geometric_shapes-0.3.5-0
-checksums           sha256 04dd288c0e8d9c9246ba5d0cf91cd913735f54ba343ce990693723064981d21b
+distfiles           0.3.6-0.tar.gz
+worksrcdir          geometric_shapes-release-release-hydro-geometric_shapes-0.3.6-0
+checksums           sha256 366cb83bb20a66db77159bb1f7b8fe6c8ba47b0d8fea6e40e3bcb0a4c42a0e33
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

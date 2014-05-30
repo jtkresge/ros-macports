@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-collada_urdf
-version             1.10.15
-revision             0
+version             1.10.18
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,7 +23,10 @@ depends_lib         port:python27 \
                     port:ros-hydro-collada_parser \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-urdf \
+                    port:ros-hydro-urdfdom \
+                    port:ros-hydro-urdfdom_headers \
                     port:ros-hydro-geometric_shapes \
+                    port:ros-hydro-tf \
                     port:ros-hydro-cmake_modules \
                     port:ros-hydro-catkin \
                     port:ros-hydro-angles \
@@ -33,14 +36,17 @@ depends_lib         port:python27 \
                     port:ros-hydro-resource_retriever \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-urdf \
+                    port:ros-hydro-urdfdom \
+                    port:ros-hydro-urdfdom_headers \
+                    port:ros-hydro-tf \
                     port:ros-hydro-geometric_shapes
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-collada_urdf ros-groovy-collada_urdf
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/hydro/collada_urdf/
-distfiles           1.10.15-0.tar.gz
-worksrcdir          robot_model-release-release-hydro-collada_urdf-1.10.15-0
-checksums           sha256 12c4aca775d6558675768d7b0856359fc61282cc22d333f2e895d0d4a9d9cdab
+distfiles           1.10.18-1.tar.gz
+worksrcdir          robot_model-release-release-hydro-collada_urdf-1.10.18-1
+checksums           sha256 38a2a4e3fd228064130e83ff445cc478b5eff106d1e486b02abfa53af966008d
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-interactive_markers
 version             1.11.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -32,7 +32,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-tf \
                     port:ros-indigo-visualization_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-interactive_markers ros-groovy-interactive_markers
 
 master_sites        https://github.com/ros-gbp/interactive_markers-release/archive/release/indigo/interactive_markers/
 distfiles           1.11.0-0.tar.gz

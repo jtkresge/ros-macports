@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosconsole
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,14 +26,15 @@ depends_lib         port:python27 \
                     port:apr \
                     port:ros-hydro-cpp_common \
                     port:ros-log4cxx \
+                    port:ros-hydro-rosbuild \
                     port:ros-hydro-rostime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosconsole ros-groovy-rosconsole
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/rosconsole/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-rosconsole-1.9.50-0
-checksums           sha256 ec38ed508dfe8c44283b017a94b947fb722ae1a0ec37cce493db452e5f5ab3de
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-rosconsole-1.10.2-0
+checksums           sha256 8beec3a4634117a43e3fb1c2cc1e2fe71c489c352b50ddcb5cb7740ab6285b27
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

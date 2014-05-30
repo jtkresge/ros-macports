@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-roslaunch
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -18,20 +18,22 @@ depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:ros-hydro-catkin \
                     port:py27-paramiko \
+                    port:py27-rospkg \
                     port:py27-yaml \
                     port:ros-hydro-rosclean \
                     port:ros-hydro-rosgraph_msgs \
                     port:ros-hydro-roslib \
                     port:ros-hydro-rosmaster \
                     port:ros-hydro-rosout \
-                    port:ros-hydro-rosparam
+                    port:ros-hydro-rosparam \
+                    port:ros-hydro-rosbuild
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-roslaunch ros-groovy-roslaunch
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/roslaunch/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-roslaunch-1.9.50-0
-checksums           sha256 66f564847e525039dcedfc88a9888ca23c1a980d4a917bc02fc588fbf711c31c
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-roslaunch-1.10.2-0
+checksums           sha256 bb17b9fc5edd4c5cab4eb702c6f253599de9b0f4dcd6ffb0132aaa45c3764c62
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

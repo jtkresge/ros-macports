@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-bfl
 version             0.7.0
-revision             3
+revision            3
 categories          devel
 platforms           darwin
 license             bsd
@@ -18,12 +18,12 @@ depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:boost \
                     port:cppunit \
-                    port:ros-hydro-catkin \
+                    port:cmake \
                     port:ros-hydro-catkin \
                     port:boost \
                     port:cppunit
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-bfl ros-groovy-bfl
 
 master_sites        https://github.com/ros-gbp/bfl-release/archive/release/hydro/bfl/
 distfiles           0.7.0-3.tar.gz

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rospack
-version             2.1.21
-revision             0
+version             2.1.23
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -28,14 +28,15 @@ depends_lib         port:python27 \
                     port:python27 \
                     port:py27-catkin-pkg \
                     port:py27-rosdep \
-                    port:tinyxml
+                    port:tinyxml \
+                    port:ros-hydro-python-coverage
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rospack ros-groovy-rospack
 
 master_sites        https://github.com/ros-gbp/rospack-release/archive/release/hydro/rospack/
-distfiles           2.1.21-0.tar.gz
-worksrcdir          rospack-release-release-hydro-rospack-2.1.21-0
-checksums           sha256 460432ef774e3503c4fb0ae16b97345f15c341a8786071e54554ce8b8fbf0a36
+distfiles           2.1.23-0.tar.gz
+worksrcdir          rospack-release-release-hydro-rospack-2.1.23-0
+checksums           sha256 d73071f649667c46d058e55a321b638fbf5762507dc0209dbb0131803c36328b
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

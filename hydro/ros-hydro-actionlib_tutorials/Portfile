@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-actionlib_tutorials
 version             0.1.7
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,7 +26,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-actionlib \
                     port:ros-hydro-message_runtime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-actionlib_tutorials ros-groovy-actionlib_tutorials
 
 master_sites        https://github.com/ros-gbp/common_tutorials-release/archive/release/hydro/actionlib_tutorials/
 distfiles           0.1.7-0.tar.gz

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-std_srvs
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,12 +20,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-message_runtime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-std_srvs ros-groovy-std_srvs
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/std_srvs/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-std_srvs-1.9.50-0
-checksums           sha256 347faf64a18ed9db5c6fac5510347d1ccc6f9b862e60a5abe3d4f8bdfe210f22
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-std_srvs-1.10.2-0
+checksums           sha256 ea14edfeac4d3ae658c5cf2c532ed9c221c54998cf4999e5b1b9f5a5713a3ef1
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

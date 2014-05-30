@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rqt_tf_tree
-version             0.3.1
-revision             0
+version             0.3.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -28,12 +28,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-tf2_msgs \
                     port:ros-hydro-tf2_ros
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rqt_tf_tree ros-groovy-rqt_tf_tree
 
 master_sites        https://github.com/ros-gbp/rqt_robot_plugins-release/archive/release/hydro/rqt_tf_tree/
-distfiles           0.3.1-0.tar.gz
-worksrcdir          rqt_robot_plugins-release-release-hydro-rqt_tf_tree-0.3.1-0
-checksums           sha256 34910c15c9465909acdeed00cb9077c4af4b7f38c0d751b91b1a49b8d35135d3
+distfiles           0.3.3-0.tar.gz
+worksrcdir          rqt_robot_plugins-release-release-hydro-rqt_tf_tree-0.3.3-0
+checksums           sha256 09a1a0aaa57abd0512b9ea5c9298ad2ecbf8e4f8ee5f7b81ee1adca2646b4a4f
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

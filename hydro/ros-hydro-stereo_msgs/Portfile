@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-stereo_msgs
-version             1.10.2
-revision             0
+version             1.10.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,12 +24,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-sensor_msgs \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-stereo_msgs ros-groovy-stereo_msgs
 
 master_sites        https://github.com/ros-gbp/common_msgs-release/archive/release/hydro/stereo_msgs/
-distfiles           1.10.2-0.tar.gz
-worksrcdir          common_msgs-release-release-hydro-stereo_msgs-1.10.2-0
-checksums           sha256 949a5d558c0e9ca017c891d754559d80c9358cf48fc6aedbfa0510afe819f2df
+distfiles           1.10.6-0.tar.gz
+worksrcdir          common_msgs-release-release-hydro-stereo_msgs-1.10.6-0
+checksums           sha256 6f338afc3bb7db58fc67bccfa2eba3a0c5eb98a486f6a660a7f017080e5c094f
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

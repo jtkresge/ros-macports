@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-std_srvs
 version             1.10.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:ros-indigo-message_runtime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-std_srvs ros-groovy-std_srvs
 
 master_sites        https://github.com/ros-gbp/ros_comm_msgs-release/archive/release/indigo/std_srvs/
 distfiles           1.10.2-0.tar.gz

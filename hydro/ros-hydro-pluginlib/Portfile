@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-pluginlib
-version             1.9.23
-revision             0
+version             1.9.24
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -28,12 +28,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-roslib \
                     port:tinyxml
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-pluginlib ros-groovy-pluginlib
 
 master_sites        https://github.com/ros-gbp/pluginlib-release/archive/release/hydro/pluginlib/
-distfiles           1.9.23-0.tar.gz
-worksrcdir          pluginlib-release-release-hydro-pluginlib-1.9.23-0
-checksums           sha256 c101e361899dd2d88d115a659f553062b7f7491c2146a6f8925843b0ab16d162
+distfiles           1.9.24-0.tar.gz
+worksrcdir          pluginlib-release-release-hydro-pluginlib-1.9.24-0
+checksums           sha256 40a17b2760e4f569430e18635c13011de689006a32c24c7e12434f442182e121
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

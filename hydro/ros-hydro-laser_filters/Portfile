@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-laser_filters
-version             1.6.11
-revision             0
+version             1.6.14
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,7 +23,6 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_filters \
                     port:ros-hydro-laser_geometry \
                     port:ros-hydro-pluginlib \
-                    port:ros-hydro-pcl_ros \
                     port:ros-hydro-rostest \
                     port:ros-hydro-angles \
                     port:ros-hydro-catkin \
@@ -34,15 +33,14 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_filters \
                     port:ros-hydro-laser_geometry \
                     port:ros-hydro-pluginlib \
-                    port:ros-hydro-pcl_ros \
                     port:ros-hydro-angles
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-laser_filters ros-groovy-laser_filters
 
 master_sites        https://github.com/ros-gbp/laser_filters-release/archive/release/hydro/laser_filters/
-distfiles           1.6.11-0.tar.gz
-worksrcdir          laser_filters-release-release-hydro-laser_filters-1.6.11-0
-checksums           sha256 caf83a18e6ab4a2064e24bd066cd55982eac21a3f1a742e1d90767891a06e0b6
+distfiles           1.6.14-0.tar.gz
+worksrcdir          laser_filters-release-release-hydro-laser_filters-1.6.14-0
+checksums           sha256 26eeaf1a67a6fa4ed05399010723e641c2f0336d5fc5f8577888a61c36f77950
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

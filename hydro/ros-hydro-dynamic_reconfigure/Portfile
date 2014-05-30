@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-dynamic_reconfigure
-version             1.5.34
-revision             0
+version             1.5.36
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -29,12 +29,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rosservice \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-dynamic_reconfigure ros-groovy-dynamic_reconfigure
 
 master_sites        https://github.com/ros-gbp/dynamic_reconfigure-release/archive/release/hydro/dynamic_reconfigure/
-distfiles           1.5.34-0.tar.gz
-worksrcdir          dynamic_reconfigure-release-release-hydro-dynamic_reconfigure-1.5.34-0
-checksums           sha256 fa1d8928b1075555483629aac21c6d2540b991806d4c2bd375e3e11c4808b41f
+distfiles           1.5.36-0.tar.gz
+worksrcdir          dynamic_reconfigure-release-release-hydro-dynamic_reconfigure-1.5.36-0
+checksums           sha256 975d6c1df1e38497f3559406780fc8d8d39d13da12a94d8e115fd6c61278be9a
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

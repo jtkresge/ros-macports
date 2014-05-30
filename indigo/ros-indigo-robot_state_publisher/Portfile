@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-robot_state_publisher
 version             1.10.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -38,7 +38,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-tf \
                     port:ros-indigo-tf_conversions
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-robot_state_publisher ros-groovy-robot_state_publisher
 
 master_sites        https://github.com/ros-gbp/robot_state_publisher-release/archive/release/indigo/robot_state_publisher/
 distfiles           1.10.2-0.tar.gz

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-xmlrpcpp
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,19 +20,15 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-cpp_common
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-xmlrpcpp ros-groovy-xmlrpcpp
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/xmlrpcpp/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-xmlrpcpp-1.9.50-0
-checksums           sha256 7997e4e840b1acf8172c11f6494e25e4dd5475dd268c14e34930b9965caff9d5
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-xmlrpcpp-1.10.2-0
+checksums           sha256 71061efb4f30d713a549ead7b475646c2a848b07db3a9989ad818b72f171e7c6
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"
-configure.compiler clang
-patchfiles          base64.h.patch
-# override patch.pre_args since it defaults to -p0
-patch.pre_args     -p1
 
 build {
 

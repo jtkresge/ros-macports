@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rqt_logger_level
 version             0.3.5
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,7 +24,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rqt_gui \
                     port:ros-indigo-rqt_gui_py
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rqt_logger_level ros-groovy-rqt_logger_level
 
 master_sites        https://github.com/ros-gbp/rqt_common_plugins-release/archive/release/indigo/rqt_logger_level/
 distfiles           0.3.5-1.tar.gz

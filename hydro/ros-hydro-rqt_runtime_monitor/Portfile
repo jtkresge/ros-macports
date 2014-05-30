@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rqt_runtime_monitor
-version             0.3.1
-revision             0
+version             0.3.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,12 +24,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rqt_gui \
                     port:ros-hydro-rqt_gui_py
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rqt_runtime_monitor ros-groovy-rqt_runtime_monitor
 
 master_sites        https://github.com/ros-gbp/rqt_robot_plugins-release/archive/release/hydro/rqt_runtime_monitor/
-distfiles           0.3.1-0.tar.gz
-worksrcdir          rqt_robot_plugins-release-release-hydro-rqt_runtime_monitor-0.3.1-0
-checksums           sha256 7f5dad458f4d877b8f4c2a9e5af8c67bb03f3a88ce3193fbe782ddda1f81a4ce
+distfiles           0.3.3-0.tar.gz
+worksrcdir          rqt_robot_plugins-release-release-hydro-rqt_runtime_monitor-0.3.3-0
+checksums           sha256 b8484403d9e6359e7f08c1699d6f69fb7c16f1f5c140dc4cba971aba2cdd5f71
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-ros_tutorials
 version             0.5.1
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,7 +21,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rospy_tutorials \
                     port:ros-indigo-turtlesim
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-ros_tutorials ros-groovy-ros_tutorials
 
 master_sites        https://github.com/ros-gbp/ros_tutorials-release/archive/release/indigo/ros_tutorials/
 distfiles           0.5.1-1.tar.gz

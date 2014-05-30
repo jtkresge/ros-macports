@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-nodelet_core
-version             1.8.1
-revision             0
+version             1.8.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,12 +20,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-nodelet \
                     port:ros-hydro-nodelet_topic_tools
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-nodelet_core ros-groovy-nodelet_core
 
 master_sites        https://github.com/ros-gbp/nodelet_core-release/archive/release/hydro/nodelet_core/
-distfiles           1.8.1-0.tar.gz
-worksrcdir          nodelet_core-release-release-hydro-nodelet_core-1.8.1-0
-checksums           sha256 c51afe749329aa9d4844df0091aa873d72192daa89dff4c5cc8419ebc9602a97
+distfiles           1.8.2-0.tar.gz
+worksrcdir          nodelet_core-release-release-hydro-nodelet_core-1.8.2-0
+checksums           sha256 87a98b508dfc5c73ea2c05e631898a6c9307cc6cb5f168a2f7dab90f1c01da31
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

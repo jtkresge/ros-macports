@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-gazebo_ros
-version             2.3.3
-revision             0
+version             2.3.5
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -46,12 +46,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-std_msgs \
                     port:tinyxml
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-gazebo_ros ros-groovy-gazebo_ros
 
 master_sites        https://github.com/ros-gbp/gazebo_ros_pkgs-release/archive/release/hydro/gazebo_ros/
-distfiles           2.3.3-0.tar.gz
-worksrcdir          gazebo_ros_pkgs-release-release-hydro-gazebo_ros-2.3.3-0
-checksums           sha256 821a5a257a05add45d0a50140f09e7a5cd715005e6eebf4b8f000a728d97574c
+distfiles           2.3.5-1.tar.gz
+worksrcdir          gazebo_ros_pkgs-release-release-hydro-gazebo_ros-2.3.5-1
+checksums           sha256 c43861fd312f1622ef3ad531761bd9d4d2878b49511986035c307ee7abc07c66
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

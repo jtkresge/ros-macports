@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-image_transport
-version             1.11.0
-revision             0
+version             1.11.3
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,12 +30,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-roslib \
                     port:ros-hydro-sensor_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-image_transport ros-groovy-image_transport
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/hydro/image_transport/
-distfiles           1.11.0-0.tar.gz
-worksrcdir          image_common-release-release-hydro-image_transport-1.11.0-0
-checksums           sha256 93a27a97ed2fc6b8d46ce71375a1e43d8f242c10d7ab3bb04a0b8d12de9b230a
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-hydro-image_transport-1.11.3-1
+checksums           sha256 8bbd666fe427a0c629ac6a29d0a6f547652ee792d9fd23138eb6cb7fff401acd
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

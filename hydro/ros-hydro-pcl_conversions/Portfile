@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-pcl_conversions
-version             0.1.5
-revision             0
+version             0.1.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,17 +23,18 @@ depends_lib         port:python27 \
                     port:ros-hydro-std_msgs \
                     port:ros-hydro-catkin \
                     port:libpcl \
+                    port:libpcl \
                     port:ros-hydro-pcl_msgs \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-sensor_msgs \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-pcl_conversions ros-groovy-pcl_conversions
 
 master_sites        https://github.com/ros-gbp/pcl_conversions-release/archive/release/hydro/pcl_conversions/
-distfiles           0.1.5-0.tar.gz
-worksrcdir          pcl_conversions-release-release-hydro-pcl_conversions-0.1.5-0
-checksums           sha256 fd5906a2e85d7901e420c559c8612cd2541a180486fdae7fa6240bff36af3f68
+distfiles           0.1.6-0.tar.gz
+worksrcdir          pcl_conversions-release-release-hydro-pcl_conversions-0.1.6-0
+checksums           sha256 be8afa9e624426c4383608e4371393299a86012fcca084fdb6501b9a7c7a6c4b
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

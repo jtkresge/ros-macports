@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-diagnostics
-version             1.8.0
-revision             0
+version             1.8.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,12 +23,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-diagnostic_updater \
                     port:ros-hydro-self_test
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-diagnostics ros-groovy-diagnostics
 
 master_sites        https://github.com/ros-gbp/diagnostics-release/archive/release/hydro/diagnostics/
-distfiles           1.8.0-0.tar.gz
-worksrcdir          diagnostics-release-release-hydro-diagnostics-1.8.0-0
-checksums           sha256 b8cb6fa5cb359044df54e83c7eac8eefa29825086400476aab93517c67ded314
+distfiles           1.8.3-0.tar.gz
+worksrcdir          diagnostics-release-release-hydro-diagnostics-1.8.3-0
+checksums           sha256 681dd3f6d84440e84f02064dc46abbf8d67d2252ddd00c022a408286ffc2d117
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

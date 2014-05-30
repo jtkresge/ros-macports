@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-genpy
-version             0.4.14
-revision             0
+version             0.4.16
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,12 +20,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-genmsg
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-genpy ros-groovy-genpy
 
 master_sites        https://github.com/ros-gbp/genpy-release/archive/release/hydro/genpy/
-distfiles           0.4.14-0.tar.gz
-worksrcdir          genpy-release-release-hydro-genpy-0.4.14-0
-checksums           sha256 2a9eaf5a8b3ddc0efff79f4d5501e1df94749c49188f9c21cc6851b5dd419d80
+distfiles           0.4.16-0.tar.gz
+worksrcdir          genpy-release-release-hydro-genpy-0.4.16-0
+checksums           sha256 d0e206c906fa9b933283b968a77ec2e0954e6c4b4a5ae50703454d4aeacff52d
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

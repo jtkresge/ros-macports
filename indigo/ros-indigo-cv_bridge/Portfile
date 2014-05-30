@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-cv_bridge
 version             1.11.2
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,7 +30,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rosconsole \
                     port:ros-indigo-sensor_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-cv_bridge ros-groovy-cv_bridge
 
 master_sites        https://github.com/ros-gbp/vision_opencv-release/archive/release/indigo/cv_bridge/
 distfiles           1.11.2-1.tar.gz

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rqt_publisher
-version             0.3.1
-revision             0
+version             0.3.4
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,12 +25,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rqt_gui_py \
                     port:ros-hydro-rqt_py_common
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rqt_publisher ros-groovy-rqt_publisher
 
 master_sites        https://github.com/ros-gbp/rqt_common_plugins-release/archive/release/hydro/rqt_publisher/
-distfiles           0.3.1-0.tar.gz
-worksrcdir          rqt_common_plugins-release-release-hydro-rqt_publisher-0.3.1-0
-checksums           sha256 f680fced42dc6a0b2593d0a4a61651cdfff1bf814af0f037ede7b1176e02e1af
+distfiles           0.3.4-0.tar.gz
+worksrcdir          rqt_common_plugins-release-release-hydro-rqt_publisher-0.3.4-0
+checksums           sha256 85417bbd04fcf4dc4aaeb19ef3a0a7c88bb16c7c5fd7a59ecea8e6eab5287bf9
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

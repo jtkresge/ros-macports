@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-laser_filters
 version             1.7.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -39,7 +39,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-pluginlib \
                     port:ros-indigo-angles
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-laser_filters ros-groovy-laser_filters
 
 master_sites        https://github.com/ros-gbp/laser_filters-release/archive/release/indigo/laser_filters/
 distfiles           1.7.0-0.tar.gz

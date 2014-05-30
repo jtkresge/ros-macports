@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-laser_geometry
-version             1.5.13
-revision             0
+version             1.5.15
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,12 +30,12 @@ depends_lib         port:python27 \
                     port:eigen3 \
                     port:boost
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-laser_geometry ros-groovy-laser_geometry
 
 master_sites        https://github.com/ros-gbp/laser_geometry-release/archive/release/hydro/laser_geometry/
-distfiles           1.5.13-0.tar.gz
-worksrcdir          laser_geometry-release-release-hydro-laser_geometry-1.5.13-0
-checksums           sha256 d5db2ed068a92f3b5317d05a02ce2c4b2239078f3a9032f1be7cece772de6bb2
+distfiles           1.5.15-0.tar.gz
+worksrcdir          laser_geometry-release-release-hydro-laser_geometry-1.5.15-0
+checksums           sha256 30378de208d60cadb287791265dc6d49c9fbbbe100cb5a6a8f2de8ebb6c3481e
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

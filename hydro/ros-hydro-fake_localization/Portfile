@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-fake_localization
-version             1.11.4
-revision             2
+version             1.11.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -33,12 +33,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_filters \
                     port:ros-hydro-rospy
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-fake_localization ros-groovy-fake_localization
 
 master_sites        https://github.com/ros-gbp/navigation-release/archive/release/hydro/fake_localization/
-distfiles           1.11.4-2.tar.gz
-worksrcdir          navigation-release-release-hydro-fake_localization-1.11.4-2
-checksums           sha256 6b51844bdbfdda7a2af71c07722663428597a5cb0632a3eca746229936c491f7
+distfiles           1.11.8-0.tar.gz
+worksrcdir          navigation-release-release-hydro-fake_localization-1.11.8-0
+checksums           sha256 83a59e19d36565e9b86490b21b553881e111876edd477998fecbbbcdd4305620
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

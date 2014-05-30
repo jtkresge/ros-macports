@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rospy_tutorials
-version             0.4.2
-revision             0
+version             0.4.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,12 +24,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rospy \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rospy_tutorials ros-groovy-rospy_tutorials
 
 master_sites        https://github.com/ros-gbp/ros_tutorials-release/archive/release/hydro/rospy_tutorials/
-distfiles           0.4.2-0.tar.gz
-worksrcdir          ros_tutorials-release-release-hydro-rospy_tutorials-0.4.2-0
-checksums           sha256 afc72db8191fa3c2f0a12dd280988db16831065860169bed7de877e9844f4328
+distfiles           0.4.3-0.tar.gz
+worksrcdir          ros_tutorials-release-release-hydro-rospy_tutorials-0.4.3-0
+checksums           sha256 2eb808d0d4daa5e92bf86a369c30cb8742f7c9c842452707809daa721c85ec64
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

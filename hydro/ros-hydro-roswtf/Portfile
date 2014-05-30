@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-roswtf
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,18 +20,19 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:py27-paramiko \
                     port:py27-rospkg \
+                    port:ros-hydro-rosbuild \
                     port:ros-hydro-rosgraph \
                     port:ros-hydro-roslaunch \
                     port:ros-hydro-roslib \
                     port:ros-hydro-rosnode \
                     port:ros-hydro-rosservice
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-roswtf ros-groovy-roswtf
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/roswtf/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-roswtf-1.9.50-0
-checksums           sha256 b5cf2d557ddb0c2cd0ce93c122792f62baa5823974aae240acd9a77fef569d9e
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-roswtf-1.10.2-0
+checksums           sha256 c4036d3a21499fb2c8d99e6377dcfcf3e345c536d99101a646275807c302e267
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

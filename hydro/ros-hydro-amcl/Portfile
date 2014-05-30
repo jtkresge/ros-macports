@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-amcl
-version             1.11.4
-revision             2
+version             1.11.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,14 +26,16 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-dynamic_reconfigure \
-                    port:ros-hydro-tf
+                    port:ros-hydro-tf \
+                    port:ros-hydro-map_server \
+                    port:ros-hydro-rosbag
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-amcl ros-groovy-amcl
 
 master_sites        https://github.com/ros-gbp/navigation-release/archive/release/hydro/amcl/
-distfiles           1.11.4-2.tar.gz
-worksrcdir          navigation-release-release-hydro-amcl-1.11.4-2
-checksums           sha256 74fc1db0181ba032d4a204bf66b80b38d31ce87ca21cdba9a4731541462d88fd
+distfiles           1.11.8-0.tar.gz
+worksrcdir          navigation-release-release-hydro-amcl-1.11.8-0
+checksums           sha256 a6975c0a6eec68e0a7cb521aa6b3b2a37952d7932da9bc2fe54d8411850c0127
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

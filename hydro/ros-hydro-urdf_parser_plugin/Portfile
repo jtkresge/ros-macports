@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-urdf_parser_plugin
-version             1.10.15
-revision             0
+version             1.10.18
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,12 +20,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-urdfdom_headers
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-urdf_parser_plugin ros-groovy-urdf_parser_plugin
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/hydro/urdf_parser_plugin/
-distfiles           1.10.15-0.tar.gz
-worksrcdir          robot_model-release-release-hydro-urdf_parser_plugin-1.10.15-0
-checksums           sha256 42230a59c4e10ad2465814a1e13e9b01251d923de55338da5c6b26c90fd055c7
+distfiles           1.10.18-1.tar.gz
+worksrcdir          robot_model-release-release-hydro-urdf_parser_plugin-1.10.18-1
+checksums           sha256 421a273341172dde36c9b0d757642b24fd98dc6723bf598759dede7c36b27f2d
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

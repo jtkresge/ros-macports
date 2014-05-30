@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-depth_image_proc
 version             1.12.5
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -35,9 +35,10 @@ depends_lib         port:python27 \
                     port:ros-indigo-image_transport \
                     port:ros-indigo-nodelet \
                     port:ros-indigo-tf2 \
-                    port:ros-indigo-tf2_ros
+                    port:ros-indigo-tf2_ros \
+                    port:ros-indigo-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-depth_image_proc ros-groovy-depth_image_proc
 
 master_sites        https://github.com/ros-gbp/image_pipeline-release/archive/release/indigo/depth_image_proc/
 distfiles           1.12.5-0.tar.gz

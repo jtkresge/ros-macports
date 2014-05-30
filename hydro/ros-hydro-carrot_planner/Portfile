@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-carrot_planner
-version             1.11.4
-revision             2
+version             1.11.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -32,12 +32,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-tf \
                     port:eigen3
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-carrot_planner ros-groovy-carrot_planner
 
 master_sites        https://github.com/ros-gbp/navigation-release/archive/release/hydro/carrot_planner/
-distfiles           1.11.4-2.tar.gz
-worksrcdir          navigation-release-release-hydro-carrot_planner-1.11.4-2
-checksums           sha256 cb9d96e126986ed07f724dbbf5ad0f7814ae3244f715207dcdc3459174b9862a
+distfiles           1.11.8-0.tar.gz
+worksrcdir          navigation-release-release-hydro-carrot_planner-1.11.8-0
+checksums           sha256 abaea6ce4488769d1a65ecee00bae498f3305af195f47e43c225e555236ec842
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

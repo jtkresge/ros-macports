@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-compressed_image_transport
 version             1.9.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,7 +26,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-image_transport \
                     port:ros-indigo-tf
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-compressed_image_transport ros-groovy-compressed_image_transport
 
 master_sites        https://github.com/ros-gbp/image_transport_plugins-release/archive/release/indigo/compressed_image_transport/
 distfiles           1.9.0-0.tar.gz

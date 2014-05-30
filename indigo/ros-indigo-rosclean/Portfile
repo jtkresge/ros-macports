@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rosclean
 version             1.11.1
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -19,7 +19,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:py27-rospkg
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rosclean ros-groovy-rosclean
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/indigo/rosclean/
 distfiles           1.11.1-1.tar.gz

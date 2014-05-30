@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosconsole_bridge
-version             0.3.3
-revision             0
+version             0.3.4
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rosconsole \
                     port:ros-hydro-console_bridge
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosconsole_bridge ros-groovy-rosconsole_bridge
 
 master_sites        https://github.com/ros-gbp/rosconsole_bridge-release/archive/release/hydro/rosconsole_bridge/
-distfiles           0.3.3-0.tar.gz
-worksrcdir          rosconsole_bridge-release-release-hydro-rosconsole_bridge-0.3.3-0
-checksums           sha256 2b4cd22c7a9698b69a5f2309c41992a30c59c3f72685f16c7abc56d3e66fece1
+distfiles           0.3.4-0.tar.gz
+worksrcdir          rosconsole_bridge-release-release-hydro-rosconsole_bridge-0.3.4-0
+checksums           sha256 693ca28c256ab1e4776ae90cee4bd8b1be48862fa0d13dc85ffbb89a6cef803c
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

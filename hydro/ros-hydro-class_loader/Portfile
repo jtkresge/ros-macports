@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-class_loader
-version             0.2.3
-revision             0
+version             0.2.5
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-console_bridge \
                     port:poco
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-class_loader ros-groovy-class_loader
 
 master_sites        https://github.com/ros-gbp/class_loader-release/archive/release/hydro/class_loader/
-distfiles           0.2.3-0.tar.gz
-worksrcdir          class_loader-release-release-hydro-class_loader-0.2.3-0
-checksums           sha256 c5525df083913d3fda83ee33cbaf6eaf59174d773d6a39503d420e4590e32470
+distfiles           0.2.5-0.tar.gz
+worksrcdir          class_loader-release-release-hydro-class_loader-0.2.5-0
+checksums           sha256 08c1535faae533687a7bfc6e3068c101bda8f128e759e36ad4df07da3fa3fc9b
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

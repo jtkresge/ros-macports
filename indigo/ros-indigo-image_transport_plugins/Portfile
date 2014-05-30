@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-image_transport_plugins
 version             1.9.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,7 +21,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-compressed_image_transport \
                     port:ros-indigo-theora_image_transport
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-image_transport_plugins ros-groovy-image_transport_plugins
 
 master_sites        https://github.com/ros-gbp/image_transport_plugins-release/archive/release/indigo/image_transport_plugins/
 distfiles           1.9.0-0.tar.gz

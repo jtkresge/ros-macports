@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rqt_py_common
 version             0.3.5
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,7 +25,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-actionlib \
                     port:ros-indigo-rosbag
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rqt_py_common ros-groovy-rqt_py_common
 
 master_sites        https://github.com/ros-gbp/rqt_common_plugins-release/archive/release/indigo/rqt_py_common/
 distfiles           0.3.5-1.tar.gz

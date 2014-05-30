@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-catkin
 version             0.6.5
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,12 +17,16 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:py27-empy \
-                    port:py27-catkin-pkg \
-                    port:py27-nose \
                     port:ros-gtest \
-                    port:cmake
+                    port:py27-empy \
+                    port:py27-nose \
+                    port:cmake \
+                    port:cmake \
+                    port:python27 \
+                    port:py27-catkin-pkg \
+                    port:py27-nose
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-catkin ros-groovy-catkin
 
 master_sites        https://github.com/ros-gbp/catkin-release/archive/release/indigo/catkin/
 distfiles           0.6.5-0.tar.gz

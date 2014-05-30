@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosclean
-version             1.10.7
-revision             0
+version             1.10.9
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -19,12 +19,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:py27-rospkg
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosclean ros-groovy-rosclean
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/hydro/rosclean/
-distfiles           1.10.7-0.tar.gz
-worksrcdir          ros-release-release-hydro-rosclean-1.10.7-0
-checksums           sha256 67fba654ccc59d37372b9469370b952d8291158d94e4301065b9331b0224146d
+distfiles           1.10.9-0.tar.gz
+worksrcdir          ros-release-release-hydro-rosclean-1.10.9-0
+checksums           sha256 56aad565023a8c47722859e7a92b5c2da255b1add2cb0fd1e6a29a208f3d2d75
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

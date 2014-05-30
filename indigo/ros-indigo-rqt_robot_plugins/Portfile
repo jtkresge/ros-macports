@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rqt_robot_plugins
 version             0.3.4
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -27,7 +27,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rqt_rviz \
                     port:ros-indigo-rqt_tf_tree
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rqt_robot_plugins ros-groovy-rqt_robot_plugins
 
 master_sites        https://github.com/ros-gbp/rqt_robot_plugins-release/archive/release/indigo/rqt_robot_plugins/
 distfiles           0.3.4-1.tar.gz

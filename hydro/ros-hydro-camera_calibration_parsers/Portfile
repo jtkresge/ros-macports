@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-camera_calibration_parsers
-version             1.11.0
-revision             0
+version             1.11.3
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,6 +17,7 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:boost \
+                    port:pkgconfig \
                     port:ros-hydro-rosconsole \
                     port:ros-hydro-sensor_msgs \
                     port:yaml-cpp \
@@ -24,12 +25,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-sensor_msgs \
                     port:yaml-cpp
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-camera_calibration_parsers ros-groovy-camera_calibration_parsers
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/hydro/camera_calibration_parsers/
-distfiles           1.11.0-0.tar.gz
-worksrcdir          image_common-release-release-hydro-camera_calibration_parsers-1.11.0-0
-checksums           sha256 85fe29a1887b3a0cf74d3ba1dbbd4461e68af4b781b0f16f14b160a6027bb1f2
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-hydro-camera_calibration_parsers-1.11.3-1
+checksums           sha256 4ab1387054f6e330b465f4109961764b1f039919b13aae94a1c94902e3770941
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

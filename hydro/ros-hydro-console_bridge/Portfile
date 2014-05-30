@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-console_bridge
 version             0.2.4
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,11 +17,11 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:boost \
-                    port:ros-hydro-catkin \
+                    port:cmake \
                     port:boost \
                     port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-console_bridge ros-groovy-console_bridge
 
 master_sites        https://github.com/ros-gbp/console_bridge-release/archive/release/hydro/console_bridge/
 distfiles           0.2.4-1.tar.gz

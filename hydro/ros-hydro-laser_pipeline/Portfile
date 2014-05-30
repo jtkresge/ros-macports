@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-laser_pipeline
 version             1.6.1
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,7 +21,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-laser_filters \
                     port:ros-hydro-laser_geometry
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-laser_pipeline ros-groovy-laser_pipeline
 
 master_sites        https://github.com/ros-gbp/laser_pipeline-release/archive/release/hydro/laser_pipeline/
 distfiles           1.6.1-1.tar.gz

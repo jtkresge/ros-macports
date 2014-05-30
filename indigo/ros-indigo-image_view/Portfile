@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-image_view
 version             1.12.5
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -38,9 +38,10 @@ depends_lib         port:python27 \
                     port:ros-indigo-nodelet \
                     port:ros-indigo-rosconsole \
                     port:ros-indigo-roscpp \
-                    port:ros-indigo-std_srvs
+                    port:ros-indigo-std_srvs \
+                    port:ros-indigo-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-image_view ros-groovy-image_view
 
 master_sites        https://github.com/ros-gbp/image_pipeline-release/archive/release/indigo/image_view/
 distfiles           1.12.5-0.tar.gz

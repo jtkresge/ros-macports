@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-sensor_msgs
-version             1.10.2
-revision             0
+version             1.10.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,12 +24,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_runtime \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-sensor_msgs ros-groovy-sensor_msgs
 
 master_sites        https://github.com/ros-gbp/common_msgs-release/archive/release/hydro/sensor_msgs/
-distfiles           1.10.2-0.tar.gz
-worksrcdir          common_msgs-release-release-hydro-sensor_msgs-1.10.2-0
-checksums           sha256 179321a669139887f23d245cc9d387221ad5cefe53efc65f0b73a45b8a898fa8
+distfiles           1.10.6-0.tar.gz
+worksrcdir          common_msgs-release-release-hydro-sensor_msgs-1.10.6-0
+checksums           sha256 1bf7d73188257a83d787365fe33e78efc5d2807956e8b4be34c6cc62adf9be30
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-pcl_msgs
 version             0.1.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,7 +25,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-sensor_msgs \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-pcl_msgs ros-groovy-pcl_msgs
 
 master_sites        https://github.com/ros-gbp/pcl_msgs-release/archive/release/hydro/pcl_msgs/
 distfiles           0.1.0-0.tar.gz

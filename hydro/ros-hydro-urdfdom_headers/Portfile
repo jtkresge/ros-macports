@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-urdfdom_headers
 version             0.2.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,7 +25,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-console_bridge \
                     port:tinyxml
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-urdfdom_headers ros-groovy-urdfdom_headers
 
 master_sites        https://github.com/ros-gbp/urdfdom_headers-release/archive/release/hydro/urdfdom_headers/
 distfiles           0.2.3-1.tar.gz

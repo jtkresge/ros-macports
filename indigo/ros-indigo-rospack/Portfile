@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rospack
 version             2.2.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -28,9 +28,10 @@ depends_lib         port:python27 \
                     port:python27 \
                     port:py27-catkin-pkg \
                     port:py27-rosdep \
-                    port:tinyxml
+                    port:tinyxml \
+                    port:ros-indigo-python-coverage
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rospack ros-groovy-rospack
 
 master_sites        https://github.com/ros-gbp/rospack-release/archive/release/indigo/rospack/
 distfiles           2.2.3-1.tar.gz

@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rostest
 version             1.11.3
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,7 +24,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-roslaunch \
                     port:ros-indigo-rosunit
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rostest ros-groovy-rostest
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/indigo/rostest/
 distfiles           1.11.3-0.tar.gz

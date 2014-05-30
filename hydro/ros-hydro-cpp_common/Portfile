@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-cpp_common
-version             0.3.16
-revision             0
+version             0.4.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,14 +16,16 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-console_bridge \
+                    port:ros-hydro-catkin \
+                    port:ros-hydro-console_bridge
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-cpp_common ros-groovy-cpp_common
 
 master_sites        https://github.com/ros-gbp/roscpp_core-release/archive/release/hydro/cpp_common/
-distfiles           0.3.16-0.tar.gz
-worksrcdir          roscpp_core-release-release-hydro-cpp_common-0.3.16-0
-checksums           sha256 193f6a676bf436dffe17612bbeb76c5495463c23e150ca431e66150853f40fb7
+distfiles           0.4.3-0.tar.gz
+worksrcdir          roscpp_core-release-release-hydro-cpp_common-0.4.3-0
+checksums           sha256 78f4d085cacfa867322e3bf1ae871e63f59010607e06434e213d8bfcb8b2e8fd
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

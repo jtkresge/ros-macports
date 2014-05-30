@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-shape_msgs
-version             1.10.2
-revision             0
+version             1.10.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,12 +24,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_runtime \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-shape_msgs ros-groovy-shape_msgs
 
 master_sites        https://github.com/ros-gbp/common_msgs-release/archive/release/hydro/shape_msgs/
-distfiles           1.10.2-0.tar.gz
-worksrcdir          common_msgs-release-release-hydro-shape_msgs-1.10.2-0
-checksums           sha256 0efe6916ff0bac34765b773610e6cbce8d3052e6d16697f880990839c4db16f0
+distfiles           1.10.6-0.tar.gz
+worksrcdir          common_msgs-release-release-hydro-shape_msgs-1.10.6-0
+checksums           sha256 071a37bb2f5324ff7718320cf5864cac59812baefd3c4fa1e41baa8a37ee2c04
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

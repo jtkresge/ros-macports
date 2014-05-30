@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-image_pipeline
 version             1.12.5
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,7 +24,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-image_view \
                     port:ros-indigo-stereo_image_proc
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-image_pipeline ros-groovy-image_pipeline
 
 master_sites        https://github.com/ros-gbp/image_pipeline-release/archive/release/indigo/image_pipeline/
 distfiles           1.12.5-0.tar.gz

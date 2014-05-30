@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-std_msgs
 version             0.5.8
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-message_runtime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-std_msgs ros-groovy-std_msgs
 
 master_sites        https://github.com/ros-gbp/std_msgs-release/archive/release/hydro/std_msgs/
 distfiles           0.5.8-0.tar.gz

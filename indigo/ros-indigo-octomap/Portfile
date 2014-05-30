@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-octomap
 version             1.6.6
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,10 +16,10 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-indigo-catkin \
+                    port:cmake \
                     port:ros-indigo-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-octomap ros-groovy-octomap
 
 master_sites        https://github.com/ros-gbp/octomap-release/archive/release/indigo/octomap/
 distfiles           1.6.6-0.tar.gz

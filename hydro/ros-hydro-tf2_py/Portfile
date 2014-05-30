@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-tf2_py
-version             0.4.7
-revision             0
+version             0.4.10
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-tf2 \
                     port:ros-hydro-rospy
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-tf2_py ros-groovy-tf2_py
 
 master_sites        https://github.com/ros-gbp/geometry_experimental-release/archive/release/hydro/tf2_py/
-distfiles           0.4.7-0.tar.gz
-worksrcdir          geometry_experimental-release-release-hydro-tf2_py-0.4.7-0
-checksums           sha256 b2286988446e21bbda4531b2f641488642499a68db864c6e5058f4468a12acb2
+distfiles           0.4.10-0.tar.gz
+worksrcdir          geometry_experimental-release-release-hydro-tf2_py-0.4.10-0
+checksums           sha256 6592d139f421c017a2592f5c26dc4e09e6fa5cd86ddb22f33229641869647af3
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

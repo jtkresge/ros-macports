@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-diagnostics
 version             1.8.3
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,7 +23,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-diagnostic_updater \
                     port:ros-indigo-self_test
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-diagnostics ros-groovy-diagnostics
 
 master_sites        https://github.com/ros-gbp/diagnostics-release/archive/release/indigo/diagnostics/
 distfiles           1.8.3-0.tar.gz

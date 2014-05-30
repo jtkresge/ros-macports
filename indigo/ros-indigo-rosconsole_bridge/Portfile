@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rosconsole_bridge
 version             0.3.4
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rosconsole \
                     port:ros-indigo-console_bridge
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rosconsole_bridge ros-groovy-rosconsole_bridge
 
 master_sites        https://github.com/ros-gbp/rosconsole_bridge-release/archive/release/indigo/rosconsole_bridge/
 distfiles           0.3.4-0.tar.gz

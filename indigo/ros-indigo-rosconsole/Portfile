@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rosconsole
 version             1.11.3
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -29,7 +29,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rosbuild \
                     port:ros-indigo-rostime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rosconsole ros-groovy-rosconsole
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/indigo/rosconsole/
 distfiles           1.11.3-0.tar.gz

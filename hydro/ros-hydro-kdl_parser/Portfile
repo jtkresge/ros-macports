@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-kdl_parser
-version             1.10.15
-revision             0
+version             1.10.18
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -27,12 +27,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-urdf
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-kdl_parser ros-groovy-kdl_parser
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/hydro/kdl_parser/
-distfiles           1.10.15-0.tar.gz
-worksrcdir          robot_model-release-release-hydro-kdl_parser-1.10.15-0
-checksums           sha256 a96901a81af443b13672e6b1ad26f9a008a716dde1158e1acf18a73f5234577c
+distfiles           1.10.18-1.tar.gz
+worksrcdir          robot_model-release-release-hydro-kdl_parser-1.10.18-1
+checksums           sha256 04e839a87d8511a4c8ad3373927c4f89c51a48aa9bb26e29c78fa04366687541
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

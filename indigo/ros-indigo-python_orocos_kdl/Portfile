@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-python_orocos_kdl
 version             1.2.2
-revision             2
+revision            2
 categories          devel
 platforms           darwin
 license             bsd
@@ -18,12 +18,12 @@ depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:ros-indigo-orocos_kdl \
                     port:py27-sip \
-                    port:ros-indigo-catkin \
+                    port:cmake \
                     port:ros-indigo-catkin \
                     port:ros-indigo-orocos_kdl \
                     port:py27-sip
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-python_orocos_kdl ros-groovy-python_orocos_kdl
 
 master_sites        https://github.com/smits/orocos-kdl-release/archive/release/indigo/python_orocos_kdl/
 distfiles           1.2.2-2.tar.gz

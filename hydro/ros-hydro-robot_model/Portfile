@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-robot_model
-version             1.10.15
-revision             0
+version             1.10.18
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,12 +25,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-urdf_parser_plugin \
                     port:ros-hydro-joint_state_publisher
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-robot_model ros-groovy-robot_model
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/hydro/robot_model/
-distfiles           1.10.15-0.tar.gz
-worksrcdir          robot_model-release-release-hydro-robot_model-1.10.15-0
-checksums           sha256 97e75ec3d3d305afe827f4a9ce0eb6ec3856a67eee6bf812129cae00c1730059
+distfiles           1.10.18-1.tar.gz
+worksrcdir          robot_model-release-release-hydro-robot_model-1.10.18-1
+checksums           sha256 950e84e8b145f3fe73feaab88d096423920d04e2956d3adbefbf7a1878d445e5
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

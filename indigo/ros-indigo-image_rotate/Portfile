@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-image_rotate
 version             1.12.5
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -37,9 +37,10 @@ depends_lib         port:python27 \
                     port:ros-indigo-roscpp \
                     port:ros-indigo-tf2 \
                     port:ros-indigo-tf2_geometry_msgs \
-                    port:ros-indigo-tf2_ros
+                    port:ros-indigo-tf2_ros \
+                    port:ros-indigo-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-image_rotate ros-groovy-image_rotate
 
 master_sites        https://github.com/ros-gbp/image_pipeline-release/archive/release/indigo/image_rotate/
 distfiles           1.12.5-0.tar.gz

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-kdl_conversions
-version             1.10.6
-revision             0
+version             1.10.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-geometry_msgs \
                     port:ros-hydro-orocos_kdl
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-kdl_conversions ros-groovy-kdl_conversions
 
 master_sites        https://github.com/ros-gbp/geometry-release/archive/release/hydro/kdl_conversions/
-distfiles           1.10.6-0.tar.gz
-worksrcdir          geometry-release-release-hydro-kdl_conversions-1.10.6-0
-checksums           sha256 90b94eb5a1ff7f618953b3ce3550b74e0128d405f66d12d77cef3e4fffdc010e
+distfiles           1.10.8-0.tar.gz
+worksrcdir          geometry-release-release-hydro-kdl_conversions-1.10.8-0
+checksums           sha256 21e102f9c10a40687ec0b31cc37752598224c5c259b7e8dcf1362a4e01be4cb1
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

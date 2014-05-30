@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-roslib
 version             1.11.1
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,7 +23,7 @@ depends_lib         port:python27 \
                     port:py27-rospkg \
                     port:ros-indigo-rospack
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-roslib ros-groovy-roslib
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/indigo/roslib/
 distfiles           1.11.1-1.tar.gz

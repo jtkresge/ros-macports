@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-actionlib_msgs
-version             1.10.2
-revision             0
+version             1.10.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,12 +23,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_runtime \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-actionlib_msgs ros-groovy-actionlib_msgs
 
 master_sites        https://github.com/ros-gbp/common_msgs-release/archive/release/hydro/actionlib_msgs/
-distfiles           1.10.2-0.tar.gz
-worksrcdir          common_msgs-release-release-hydro-actionlib_msgs-1.10.2-0
-checksums           sha256 4438757324786923f1b11c905350e795fee98081e2bf64c9649974899e55b74b
+distfiles           1.10.6-0.tar.gz
+worksrcdir          common_msgs-release-release-hydro-actionlib_msgs-1.10.6-0
+checksums           sha256 1e4676945081a524a73921fcc01195b3a9697bdc70bc5b4e2a37603c03685b83
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-image_proc
-version             1.11.3
-revision             0
+version             1.11.10
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -34,14 +34,15 @@ depends_lib         port:python27 \
                     port:ros-hydro-nodelet \
                     port:opencv \
                     port:ros-hydro-roscpp \
-                    port:ros-hydro-sensor_msgs
+                    port:ros-hydro-sensor_msgs \
+                    port:ros-hydro-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-image_proc ros-groovy-image_proc
 
 master_sites        https://github.com/ros-gbp/image_pipeline-release/archive/release/hydro/image_proc/
-distfiles           1.11.3-0.tar.gz
-worksrcdir          image_pipeline-release-release-hydro-image_proc-1.11.3-0
-checksums           sha256 8caeb3fa7f068e050dfced5c538d9a07c3c43ae2de9db02a029565c07beafcda
+distfiles           1.11.10-0.tar.gz
+worksrcdir          image_pipeline-release-release-hydro-image_proc-1.11.10-0
+checksums           sha256 97a7fd8ad8c4286ea721e5c45cef68978eb052f7205c2afb9801fcb1ba537e73
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

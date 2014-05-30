@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-desktop
 version             1.0.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,7 +26,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-visualization_tutorials \
                     port:ros-hydro-viz
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-desktop ros-groovy-desktop
 
 master_sites        https://github.com/ros-gbp/metapackages-release/archive/release/hydro/desktop/
 distfiles           1.0.2-0.tar.gz

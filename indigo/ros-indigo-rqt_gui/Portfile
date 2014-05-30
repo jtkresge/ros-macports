@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rqt_gui
 version             0.2.14
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,7 +21,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:ros-indigo-qt_gui
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rqt_gui ros-groovy-rqt_gui
 
 master_sites        https://github.com/ros-gbp/rqt-release/archive/release/indigo/rqt_gui/
 distfiles           0.2.14-1.tar.gz

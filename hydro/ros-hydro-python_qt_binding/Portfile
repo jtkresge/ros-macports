@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-python_qt_binding
-version             0.2.11
-revision             0
+version             0.2.12
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:py27-pyqt4
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-python_qt_binding ros-groovy-python_qt_binding
 
 master_sites        https://github.com/ros-gbp/python_qt_binding-release/archive/release/hydro/python_qt_binding/
-distfiles           0.2.11-0.tar.gz
-worksrcdir          python_qt_binding-release-release-hydro-python_qt_binding-0.2.11-0
-checksums           sha256 27219334319ab8d868dcb5b01bfac217932be980c67807e21d9eeb700e4c5147
+distfiles           0.2.12-0.tar.gz
+worksrcdir          python_qt_binding-release-release-hydro-python_qt_binding-0.2.12-0
+checksums           sha256 2a734c8d1671af68baf2c12d5ac8a1bc152d7b2d7e409765257ed8163806699c
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

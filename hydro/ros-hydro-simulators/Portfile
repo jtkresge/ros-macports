@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-simulators
 version             1.0.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,7 +24,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-rqt_robot_plugins \
                     port:ros-hydro-stage_ros
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-simulators ros-groovy-simulators
 
 master_sites        https://github.com/ros-gbp/metapackages-release/archive/release/hydro/simulators/
 distfiles           1.0.2-0.tar.gz

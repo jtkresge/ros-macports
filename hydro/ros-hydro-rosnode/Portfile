@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosnode
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,12 +21,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-rosgraph \
                     port:ros-hydro-rostopic
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosnode ros-groovy-rosnode
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/rosnode/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-rosnode-1.9.50-0
-checksums           sha256 c349238f633bb5fb3fb05f166719f942dcc3b5b3e7594d7ce95c3221a08d4d5c
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-rosnode-1.10.2-0
+checksums           sha256 f0a8951f4e5794d9f1bab6ed2a9c6296b014ca2699944ee21b7933fd9157eff4
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

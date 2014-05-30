@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-urdf_parser_plugin
 version             1.11.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:ros-indigo-urdfdom_headers
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-urdf_parser_plugin ros-groovy-urdf_parser_plugin
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/indigo/urdf_parser_plugin/
 distfiles           1.11.2-0.tar.gz

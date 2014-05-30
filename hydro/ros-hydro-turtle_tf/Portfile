@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-turtle_tf
 version             0.2.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,7 +30,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-tf \
                     port:ros-hydro-turtlesim
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-turtle_tf ros-groovy-turtle_tf
 
 master_sites        https://github.com/ros-gbp/geometry_tutorials-release/archive/release/hydro/turtle_tf/
 distfiles           0.2.0-0.tar.gz

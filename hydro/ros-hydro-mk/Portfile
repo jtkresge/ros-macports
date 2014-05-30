@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-mk
-version             1.10.7
-revision             0
+version             1.10.9
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,14 +16,14 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-mk ros-groovy-mk
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/hydro/mk/
-distfiles           1.10.7-0.tar.gz
-worksrcdir          ros-release-release-hydro-mk-1.10.7-0
-checksums           sha256 f4ebdd6237f7a97ec15618f44c17cdd06260dd489f335cc9f0578d7e6d43db7b
+distfiles           1.10.9-0.tar.gz
+worksrcdir          ros-release-release-hydro-mk-1.10.9-0
+checksums           sha256 d6471a6685bb987a7301e4476f65a9d9058ed8698dcd1ef7b295ccdcb2fbbbe6
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

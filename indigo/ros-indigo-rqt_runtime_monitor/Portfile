@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rqt_runtime_monitor
 version             0.3.4
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,7 +24,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rqt_gui \
                     port:ros-indigo-rqt_gui_py
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rqt_runtime_monitor ros-groovy-rqt_runtime_monitor
 
 master_sites        https://github.com/ros-gbp/rqt_robot_plugins-release/archive/release/indigo/rqt_runtime_monitor/
 distfiles           0.3.4-1.tar.gz

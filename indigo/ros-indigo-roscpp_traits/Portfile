@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-roscpp_traits
 version             0.5.0
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-cpp_common \
                     port:ros-indigo-rostime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-roscpp_traits ros-groovy-roscpp_traits
 
 master_sites        https://github.com/ros-gbp/roscpp_core-release/archive/release/indigo/roscpp_traits/
 distfiles           0.5.0-1.tar.gz

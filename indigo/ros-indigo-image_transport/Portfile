@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-image_transport
 version             1.11.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,7 +30,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-roslib \
                     port:ros-indigo-sensor_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-image_transport ros-groovy-image_transport
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/indigo/image_transport/
 distfiles           1.11.3-1.tar.gz

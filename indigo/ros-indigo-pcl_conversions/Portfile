@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-pcl_conversions
 version             0.2.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,7 +30,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-sensor_msgs \
                     port:ros-indigo-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-pcl_conversions ros-groovy-pcl_conversions
 
 master_sites        https://github.com/ros-gbp/pcl_conversions-release/archive/release/indigo/pcl_conversions/
 distfiles           0.2.0-0.tar.gz

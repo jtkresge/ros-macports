@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-urdfdom
-version             0.2.8
-revision             1
+version             0.2.10
+revision            3
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,19 +20,18 @@ depends_lib         port:python27 \
                     port:ros-hydro-console_bridge \
                     port:tinyxml \
                     port:ros-hydro-urdfdom_headers \
-                    port:ros-hydro-catkin \
                     port:boost \
                     port:ros-hydro-catkin \
                     port:ros-hydro-console_bridge \
                     port:tinyxml \
                     port:ros-hydro-urdfdom_headers
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-urdfdom ros-groovy-urdfdom
 
 master_sites        https://github.com/ros-gbp/urdfdom-release/archive/release/hydro/urdfdom/
-distfiles           0.2.8-1.tar.gz
-worksrcdir          urdfdom-release-release-hydro-urdfdom-0.2.8-1
-checksums           sha256 df2b0a63d6b394d1b1bda695af53d7d8598458c9cdefd368f0867332c266956a
+distfiles           0.2.10-3.tar.gz
+worksrcdir          urdfdom-release-release-hydro-urdfdom-0.2.10-3
+checksums           sha256 73166d8030b8951aa69a62f40d815bd9b9df8cc3be0fffb51e375986537924c6
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-eigen_conversions
-version             1.10.6
-revision             0
+version             1.10.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,12 +26,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-orocos_kdl \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-eigen_conversions ros-groovy-eigen_conversions
 
 master_sites        https://github.com/ros-gbp/geometry-release/archive/release/hydro/eigen_conversions/
-distfiles           1.10.6-0.tar.gz
-worksrcdir          geometry-release-release-hydro-eigen_conversions-1.10.6-0
-checksums           sha256 267e8513eec5e0440d841415612454919cec95b3796db7c2febe95f09b02d818
+distfiles           1.10.8-0.tar.gz
+worksrcdir          geometry-release-release-hydro-eigen_conversions-1.10.8-0
+checksums           sha256 cbe58cbd856197a7d453bcd983989975372160139d1ec4762c2924fd27590a3a
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

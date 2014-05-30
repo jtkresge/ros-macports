@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-octomap
-version             1.6.1
-revision             0
+version             1.6.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,15 +16,15 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin \
+                    port:cmake \
                     port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-octomap ros-groovy-octomap
 
 master_sites        https://github.com/ros-gbp/octomap-release/archive/release/hydro/octomap/
-distfiles           1.6.1-0.tar.gz
-worksrcdir          octomap-release-release-hydro-octomap-1.6.1-0
-checksums           sha256 8172c9cbfb915bdddfccec0e56ba14d20018346750ff006c96e1e665220f1bf0
+distfiles           1.6.6-0.tar.gz
+worksrcdir          octomap-release-release-hydro-octomap-1.6.6-0
+checksums           sha256 210fd532963cab93e65bea2f8873c901d127d2b3231a868172f26857566e0ef6
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

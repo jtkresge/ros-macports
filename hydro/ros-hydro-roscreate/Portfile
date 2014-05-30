@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-roscreate
-version             1.10.7
-revision             0
+version             1.10.9
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -19,12 +19,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:py27-rospkg
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-roscreate ros-groovy-roscreate
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/hydro/roscreate/
-distfiles           1.10.7-0.tar.gz
-worksrcdir          ros-release-release-hydro-roscreate-1.10.7-0
-checksums           sha256 c1378b0e5d62519e788c22f292f97d6b1d574de89efa43f6abc875e9151f2fef
+distfiles           1.10.9-0.tar.gz
+worksrcdir          ros-release-release-hydro-roscreate-1.10.9-0
+checksums           sha256 fcfa650c1ef261438260c27e0c59d842dc7f95824805f775c737c45627c34871
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

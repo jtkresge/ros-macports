@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-tf
 version             1.11.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -40,7 +40,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-tf2 \
                     port:ros-indigo-tf2_ros
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-tf ros-groovy-tf
 
 master_sites        https://github.com/ros-gbp/geometry-release/archive/release/indigo/tf/
 distfiles           1.11.3-1.tar.gz

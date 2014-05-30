@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-camera_info_manager
 version             1.11.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -29,9 +29,10 @@ depends_lib         port:python27 \
                     port:ros-indigo-image_transport \
                     port:ros-indigo-roscpp \
                     port:ros-indigo-roslib \
-                    port:ros-indigo-sensor_msgs
+                    port:ros-indigo-sensor_msgs \
+                    port:ros-gtest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-camera_info_manager ros-groovy-camera_info_manager
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/indigo/camera_info_manager/
 distfiles           1.11.3-1.tar.gz

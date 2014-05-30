@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-bond
 version             1.7.13
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_runtime \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-bond ros-groovy-bond
 
 master_sites        https://github.com/ros-gbp/bond_core-release/archive/release/hydro/bond/
 distfiles           1.7.13-0.tar.gz

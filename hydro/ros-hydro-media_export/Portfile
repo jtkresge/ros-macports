@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-media_export
 version             0.1.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,9 +16,9 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-media_export ros-groovy-media_export
 
 master_sites        https://github.com/ros-gbp/media_export-release/archive/release/hydro/media_export/
 distfiles           0.1.0-0.tar.gz

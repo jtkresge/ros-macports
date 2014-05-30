@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-driver_base
 version             1.6.8
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -30,7 +30,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-dynamic_reconfigure \
                     port:ros-indigo-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-driver_base ros-groovy-driver_base
 
 master_sites        https://github.com/ros-gbp/driver_common-release/archive/release/indigo/driver_base/
 distfiles           1.6.8-1.tar.gz

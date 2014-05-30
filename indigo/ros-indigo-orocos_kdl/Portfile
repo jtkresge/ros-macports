@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-orocos_kdl
 version             1.2.2
-revision             2
+revision            2
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,12 +17,13 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:eigen3 \
-                    port:ros-indigo-catkin \
+                    port:cmake \
                     port:ros-indigo-catkin \
                     port:eigen3 \
-                    port:pkgconfig
+                    port:pkgconfig \
+                    port:cppunit
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-orocos_kdl ros-groovy-orocos_kdl
 
 master_sites        https://github.com/smits/orocos-kdl-release/archive/release/indigo/orocos_kdl/
 distfiles           1.2.2-2.tar.gz

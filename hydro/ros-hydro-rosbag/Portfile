@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosbag
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,9 +17,9 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:boost \
-                    port:bzip2 \
                     port:ros-hydro-cpp_common \
                     port:py27-pil \
+                    port:ros-hydro-rosbag_storage \
                     port:ros-hydro-rosconsole \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-roscpp_serialization \
@@ -27,10 +27,10 @@ depends_lib         port:python27 \
                     port:ros-hydro-xmlrpcpp \
                     port:ros-hydro-catkin \
                     port:boost \
-                    port:bzip2 \
                     port:ros-hydro-genmsg \
                     port:ros-hydro-genpy \
                     port:py27-rospkg \
+                    port:ros-hydro-rosbag_storage \
                     port:ros-hydro-rosconsole \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-roslib \
@@ -38,17 +38,15 @@ depends_lib         port:python27 \
                     port:ros-hydro-topic_tools \
                     port:ros-hydro-xmlrpcpp
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosbag ros-groovy-rosbag
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/rosbag/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-rosbag-1.9.50-0
-checksums           sha256 fda82ba8c923fa0cbdf22a9f1562cade4f98cb0267110e4ca2c08a3c696ff3e3
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-rosbag-1.10.2-0
+checksums           sha256 c9b3292365b6009d22d5a3483c9c588fc87f518b95aeacd88db7b4b7d318128c
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"
-# Needs a patch
-patchfiles      query.h.patch
 
 build {
 
@@ -79,6 +77,10 @@ build {
           --install-space=${prefix} \
           --install"
 
+#We need to fix the rpath for the liblz4.dylib
+system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/librosbag.dylib"
+system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/rosbag/play"
+system "install_name_tool -change liblz4.1.0.0.dylib /opt/local/lib/liblz4.1.0.0.dylib ${destroot}/opt/local/lib/rosbag/record"
 
 
      # Remove _setup_util.py, env.sh, setup.*, .catkin, .rosinstall unless

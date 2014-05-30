@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rqt_rviz
 version             0.3.4
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -28,7 +28,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rqt_gui_cpp \
                     port:ros-indigo-rviz
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rqt_rviz ros-groovy-rqt_rviz
 
 master_sites        https://github.com/ros-gbp/rqt_robot_plugins-release/archive/release/indigo/rqt_rviz/
 distfiles           0.3.4-1.tar.gz

@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-urdf_tutorial
-version             0.2.1
-revision             0
+version             0.2.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,12 +20,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-urdf
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-urdf_tutorial ros-groovy-urdf_tutorial
 
 master_sites        https://github.com/ros-gbp/urdf_tutorial-release/archive/release/hydro/urdf_tutorial/
-distfiles           0.2.1-0.tar.gz
-worksrcdir          urdf_tutorial-release-release-hydro-urdf_tutorial-0.2.1-0
-checksums           sha256 2f0e305f2bf5d4cc9bc98bfde467c7de2b1b365d9acdab618d78eb05a2b8ff9e
+distfiles           0.2.3-0.tar.gz
+worksrcdir          urdf_tutorial-release-release-hydro-urdf_tutorial-0.2.3-0
+checksums           sha256 50f1bcfc30efc7ed269f9ecf9bc7ad5d4ac777c2b386daba5fdbf5920d1f0cd7
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

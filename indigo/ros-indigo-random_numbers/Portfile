@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-random_numbers
 version             0.2.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:boost
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-random_numbers ros-groovy-random_numbers
 
 master_sites        https://github.com/ros-gbp/random_numbers-release/archive/release/indigo/random_numbers/
 distfiles           0.2.0-0.tar.gz

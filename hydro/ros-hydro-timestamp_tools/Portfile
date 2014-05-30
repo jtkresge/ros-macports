@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-timestamp_tools
 version             1.6.7
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-roslib \
                     port:ros-hydro-roscpp
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-timestamp_tools ros-groovy-timestamp_tools
 
 master_sites        https://github.com/ros-gbp/driver_common-release/archive/release/hydro/timestamp_tools/
 distfiles           1.6.7-0.tar.gz

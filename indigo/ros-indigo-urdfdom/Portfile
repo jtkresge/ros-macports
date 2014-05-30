@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-urdfdom
 version             0.3.0
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,14 +20,13 @@ depends_lib         port:python27 \
                     port:ros-indigo-console_bridge \
                     port:tinyxml \
                     port:ros-indigo-urdfdom_headers \
-                    port:ros-indigo-catkin \
                     port:boost \
                     port:ros-indigo-catkin \
                     port:ros-indigo-console_bridge \
                     port:tinyxml \
                     port:ros-indigo-urdfdom_headers
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-urdfdom ros-groovy-urdfdom
 
 master_sites        https://github.com/ros-gbp/urdfdom-release/archive/release/indigo/urdfdom/
 distfiles           0.3.0-1.tar.gz

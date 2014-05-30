@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-geometric_shapes
 version             0.3.8
-revision             2
+revision            2
 categories          devel
 platforms           darwin
 license             bsd
@@ -42,7 +42,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-eigen_stl_containers \
                     port:ros-indigo-resource_retriever
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-geometric_shapes ros-groovy-geometric_shapes
 
 master_sites        https://github.com/ros-gbp/geometric_shapes-release/archive/release/indigo/geometric_shapes/
 distfiles           0.3.8-2.tar.gz

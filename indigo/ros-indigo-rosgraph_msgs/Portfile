@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rosgraph_msgs
 version             1.10.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-message_runtime \
                     port:ros-indigo-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rosgraph_msgs ros-groovy-rosgraph_msgs
 
 master_sites        https://github.com/ros-gbp/ros_comm_msgs-release/archive/release/indigo/rosgraph_msgs/
 distfiles           1.10.2-0.tar.gz

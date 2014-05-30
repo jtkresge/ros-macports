@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rviz
 version             1.11.2
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -80,7 +80,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-media_export \
                     port:tinyxml
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rviz ros-groovy-rviz
 
 master_sites        https://github.com/ros-gbp/rviz-release/archive/release/indigo/rviz/
 distfiles           1.11.2-1.tar.gz

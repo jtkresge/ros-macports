@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-interactive_markers
-version             1.9.8
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,34 +16,28 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-message_filters \
-                    port:ros-hydro-rosbag \
                     port:ros-hydro-rosconsole \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-rospy \
                     port:ros-hydro-rostest \
                     port:ros-hydro-std_msgs \
-                    port:ros-hydro-std_srvs \
                     port:ros-hydro-tf \
                     port:ros-hydro-visualization_msgs \
                     port:ros-hydro-catkin \
-                    port:ros-hydro-message_filters \
-                    port:ros-hydro-rosbag \
                     port:ros-hydro-rosconsole \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-rospy \
                     port:ros-hydro-rostest \
                     port:ros-hydro-std_msgs \
-                    port:ros-hydro-std_srvs \
                     port:ros-hydro-tf \
                     port:ros-hydro-visualization_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-interactive_markers ros-groovy-interactive_markers
 
 master_sites        https://github.com/ros-gbp/interactive_markers-release/archive/release/hydro/interactive_markers/
-distfiles           1.9.8-0.tar.gz
-worksrcdir          interactive_markers-release-release-hydro-interactive_markers-1.9.8-0
-checksums           sha256 101bae9dba430bac2a976a4953c1a33c0eeb5468e0c0a14358ee224439af554d
+distfiles           1.10.2-0.tar.gz
+worksrcdir          interactive_markers-release-release-hydro-interactive_markers-1.10.2-0
+checksums           sha256 f758445711a8cae526651a54b1b27615d267ec58c2c2b80114c9db85dceebad3
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

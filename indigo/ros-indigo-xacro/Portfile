@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-xacro
 version             1.9.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -18,9 +18,10 @@ depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:ros-indigo-roslint \
                     port:ros-indigo-catkin \
-                    port:ros-indigo-roslaunch
+                    port:ros-indigo-roslaunch \
+                    port:ros-indigo-rostest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-xacro ros-groovy-xacro
 
 master_sites        https://github.com/ros-gbp/xacro-release/archive/release/indigo/xacro/
 distfiles           1.9.0-0.tar.gz

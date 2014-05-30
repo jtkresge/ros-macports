@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-perception_pcl
-version             1.1.7
-revision             0
+version             1.1.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,12 +21,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-pcl_msgs \
                     port:ros-hydro-pcl_ros
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-perception_pcl ros-groovy-perception_pcl
 
 master_sites        https://github.com/ros-gbp/perception_pcl-release/archive/release/hydro/perception_pcl/
-distfiles           1.1.7-0.tar.gz
-worksrcdir          perception_pcl-release-release-hydro-perception_pcl-1.1.7-0
-checksums           sha256 3b260c3477975017eb3a922d72bc5c35532681ece7c370e6727b7714766f7749
+distfiles           1.1.8-0.tar.gz
+worksrcdir          perception_pcl-release-release-hydro-perception_pcl-1.1.8-0
+checksums           sha256 703d2e3e8a9b108bb577d271899dfd6e9993f397f74a4c0eb32634eb69fe6ec7
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

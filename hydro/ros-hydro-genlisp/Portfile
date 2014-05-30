@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-genlisp
 version             0.4.12
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-genmsg
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-genlisp ros-groovy-genlisp
 
 master_sites        https://github.com/ros-gbp/genlisp-release/archive/release/hydro/genlisp/
 distfiles           0.4.12-0.tar.gz

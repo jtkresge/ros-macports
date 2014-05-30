@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-smclib
 version             1.7.14
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,9 +16,9 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-indigo-catkin 
+                    port:ros-indigo-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-smclib ros-groovy-smclib
 
 master_sites        https://github.com/ros-gbp/bond_core-release/archive/release/indigo/smclib/
 distfiles           1.7.14-1.tar.gz

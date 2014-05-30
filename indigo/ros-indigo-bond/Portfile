@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-bond
 version             1.7.14
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-message_runtime \
                     port:ros-indigo-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-bond ros-groovy-bond
 
 master_sites        https://github.com/ros-gbp/bond_core-release/archive/release/indigo/bond/
 distfiles           1.7.14-1.tar.gz

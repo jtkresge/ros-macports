@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-mobile
 version             1.0.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,7 +24,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-perception_pcl \
                     port:ros-hydro-robot
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-mobile ros-groovy-mobile
 
 master_sites        https://github.com/ros-gbp/metapackages-release/archive/release/hydro/mobile/
 distfiles           1.0.2-0.tar.gz

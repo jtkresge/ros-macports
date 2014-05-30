@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rostime
-version             0.3.16
-revision             0
+version             0.4.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:boost \
                     port:ros-hydro-cpp_common
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rostime ros-groovy-rostime
 
 master_sites        https://github.com/ros-gbp/roscpp_core-release/archive/release/hydro/rostime/
-distfiles           0.3.16-0.tar.gz
-worksrcdir          roscpp_core-release-release-hydro-rostime-0.3.16-0
-checksums           sha256 c97bc8dbae5d961220ebbdad53dc0ca56f75952d8966df01af1c674ca8fd49fa
+distfiles           0.4.3-0.tar.gz
+worksrcdir          roscpp_core-release-release-hydro-rostime-0.4.3-0
+checksums           sha256 272c86177767c92e6f37f17837d5978ddce67262668749302d305bf8c603a4b5
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

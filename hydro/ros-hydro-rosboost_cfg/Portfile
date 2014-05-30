@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosboost_cfg
-version             1.10.7
-revision             0
+version             1.10.9
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,14 +16,14 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosboost_cfg ros-groovy-rosboost_cfg
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/hydro/rosboost_cfg/
-distfiles           1.10.7-0.tar.gz
-worksrcdir          ros-release-release-hydro-rosboost_cfg-1.10.7-0
-checksums           sha256 a4c8ef98413c3a83653d083032df4d06185a3aa3606e04560b2542f9f37b3b84
+distfiles           1.10.9-0.tar.gz
+worksrcdir          ros-release-release-hydro-rosboost_cfg-1.10.9-0
+checksums           sha256 12e258957a8a7d933678ea4c21b283f9aa2cc010f5bb5aceca338e5da99f835b
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

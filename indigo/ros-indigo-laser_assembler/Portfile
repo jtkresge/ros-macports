@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-laser_assembler
 version             1.7.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -35,7 +35,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-laser_geometry \
                     port:ros-indigo-pluginlib
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-laser_assembler ros-groovy-laser_assembler
 
 master_sites        https://github.com/ros-gbp/laser_assembler-release/archive/release/indigo/laser_assembler/
 distfiles           1.7.2-0.tar.gz

@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-tf2_py
 version             0.5.4
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-tf2 \
                     port:ros-indigo-rospy
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-tf2_py ros-groovy-tf2_py
 
 master_sites        https://github.com/ros-gbp/geometry_experimental-release/archive/release/indigo/tf2_py/
 distfiles           0.5.4-1.tar.gz

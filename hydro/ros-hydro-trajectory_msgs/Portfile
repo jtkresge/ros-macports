@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-trajectory_msgs
-version             1.10.2
-revision             0
+version             1.10.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,12 +25,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-std_msgs \
                     port:ros-hydro-rosbag_migration_rule
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-trajectory_msgs ros-groovy-trajectory_msgs
 
 master_sites        https://github.com/ros-gbp/common_msgs-release/archive/release/hydro/trajectory_msgs/
-distfiles           1.10.2-0.tar.gz
-worksrcdir          common_msgs-release-release-hydro-trajectory_msgs-1.10.2-0
-checksums           sha256 3c0fa8946646d7544d9967281d2aa4cf72067776dee6df00e64f165c4a5f816b
+distfiles           1.10.6-0.tar.gz
+worksrcdir          common_msgs-release-release-hydro-trajectory_msgs-1.10.6-0
+checksums           sha256 c6adc60e3123f22d9330993b2ad07a5f9973fc0390149be88d208b58d0aaf5a4
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

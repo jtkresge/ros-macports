@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-camera_info_manager
-version             1.11.0
-revision             0
+version             1.11.3
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -29,14 +29,15 @@ depends_lib         port:python27 \
                     port:ros-hydro-image_transport \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-roslib \
-                    port:ros-hydro-sensor_msgs
+                    port:ros-hydro-sensor_msgs \
+                    port:ros-gtest
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-camera_info_manager ros-groovy-camera_info_manager
 
 master_sites        https://github.com/ros-gbp/image_common-release/archive/release/hydro/camera_info_manager/
-distfiles           1.11.0-0.tar.gz
-worksrcdir          image_common-release-release-hydro-camera_info_manager-1.11.0-0
-checksums           sha256 4bedc8b0e249bf83d798b9c3b8dd418c83f76fda34b85bcb0a4656461ec30743
+distfiles           1.11.3-1.tar.gz
+worksrcdir          image_common-release-release-hydro-camera_info_manager-1.11.3-1
+checksums           sha256 686600bd67d51c00302decdf9816a7794e0968cc9b7a5b4a4f61df53127378c9
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

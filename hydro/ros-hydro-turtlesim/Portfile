@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-turtlesim
-version             0.4.2
-revision             0
+version             0.4.3
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -39,12 +39,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-std_msgs \
                     port:ros-hydro-std_srvs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-turtlesim ros-groovy-turtlesim
 
 master_sites        https://github.com/ros-gbp/ros_tutorials-release/archive/release/hydro/turtlesim/
-distfiles           0.4.2-0.tar.gz
-worksrcdir          ros_tutorials-release-release-hydro-turtlesim-0.4.2-0
-checksums           sha256 5b33f60a1e93e331996378362c2f29a9b6f6e0fed361489b3c4c9282c9dcf1c8
+distfiles           0.4.3-0.tar.gz
+worksrcdir          ros_tutorials-release-release-hydro-turtlesim-0.4.3-0
+checksums           sha256 8f5b25655fc0f2b704ffc6d1db4b2302f21e76658197c74aa188b6bdb5ad4ba1
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

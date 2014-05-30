@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-ros_full
 version             1.0.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -21,7 +21,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-rosdoc_lite \
                     port:ros-hydro-rqt_common_plugins
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-ros_full ros-groovy-ros_full
 
 master_sites        https://github.com/ros-gbp/metapackages-release/archive/release/hydro/ros_full/
 distfiles           1.0.2-0.tar.gz

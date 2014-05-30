@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-geometry
 version             1.11.3
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,7 +23,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-tf \
                     port:ros-indigo-tf_conversions
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-geometry ros-groovy-geometry
 
 master_sites        https://github.com/ros-gbp/geometry-release/archive/release/indigo/geometry/
 distfiles           1.11.3-1.tar.gz

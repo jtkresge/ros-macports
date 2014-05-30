@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-smach_msgs
 version             2.0.0
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-message_runtime \
                     port:ros-indigo-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-smach_msgs ros-groovy-smach_msgs
 
 master_sites        https://github.com/ros-gbp/executive_smach-release/archive/release/indigo/smach_msgs/
 distfiles           2.0.0-0.tar.gz

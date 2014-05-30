@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rosmsg
 version             1.11.3
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -23,7 +23,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-rosbag \
                     port:ros-indigo-roslib
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rosmsg ros-groovy-rosmsg
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/indigo/rosmsg/
 distfiles           1.11.3-0.tar.gz

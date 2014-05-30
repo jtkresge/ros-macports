@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-eigen_stl_containers
 version             0.1.4
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -19,7 +19,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:eigen3
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-eigen_stl_containers ros-groovy-eigen_stl_containers
 
 master_sites        https://github.com/ros-gbp/eigen_stl_containers-release/archive/release/hydro/eigen_stl_containers/
 distfiles           0.1.4-0.tar.gz

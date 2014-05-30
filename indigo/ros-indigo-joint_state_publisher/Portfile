@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-joint_state_publisher
 version             1.11.2
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,7 +24,7 @@ depends_lib         port:python27 \
                     port:py27-wxpython-3.0 \
                     port:ros-indigo-sensor_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-joint_state_publisher ros-groovy-joint_state_publisher
 
 master_sites        https://github.com/ros-gbp/robot_model-release/archive/release/indigo/joint_state_publisher/
 distfiles           1.11.2-0.tar.gz

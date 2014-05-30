@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-gazebo_plugins
-version             2.3.3
-revision             0
+version             2.3.5
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -65,12 +65,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-cv_bridge \
                     port:ros-hydro-polled_camera
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-gazebo_plugins ros-groovy-gazebo_plugins
 
 master_sites        https://github.com/ros-gbp/gazebo_ros_pkgs-release/archive/release/hydro/gazebo_plugins/
-distfiles           2.3.3-0.tar.gz
-worksrcdir          gazebo_ros_pkgs-release-release-hydro-gazebo_plugins-2.3.3-0
-checksums           sha256 3c3d2e678de9ec60ae50777c47703368ce3595784df0c1ab68b9329bc335613c
+distfiles           2.3.5-1.tar.gz
+worksrcdir          gazebo_ros_pkgs-release-release-hydro-gazebo_plugins-2.3.5-1
+checksums           sha256 3030bb692c11712a5b5d760090f8110afdb1814645442fcb9a58ade4083202ba
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-python_qt_binding
 version             0.2.13
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:py27-pyqt4
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-python_qt_binding ros-groovy-python_qt_binding
 
 master_sites        https://github.com/ros-gbp/python_qt_binding-release/archive/release/indigo/python_qt_binding/
 distfiles           0.2.13-0.tar.gz

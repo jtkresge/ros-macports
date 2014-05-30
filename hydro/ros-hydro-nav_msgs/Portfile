@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-nav_msgs
-version             1.10.2
-revision             0
+version             1.10.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -26,12 +26,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-std_msgs \
                     port:ros-hydro-actionlib_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-nav_msgs ros-groovy-nav_msgs
 
 master_sites        https://github.com/ros-gbp/common_msgs-release/archive/release/hydro/nav_msgs/
-distfiles           1.10.2-0.tar.gz
-worksrcdir          common_msgs-release-release-hydro-nav_msgs-1.10.2-0
-checksums           sha256 e65cff0cf6a18f86c1c4d7cbbe798d03739b4f9c4e816ed4b28e10c3adfaf4af
+distfiles           1.10.6-0.tar.gz
+worksrcdir          common_msgs-release-release-hydro-nav_msgs-1.10.6-0
+checksums           sha256 0abf7d805589cbf7643ef6757afd377cf218ce7e5160b14928fdb87a749e40aa
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

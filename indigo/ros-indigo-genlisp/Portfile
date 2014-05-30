@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-genlisp
 version             0.4.13
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-catkin \
                     port:ros-indigo-genmsg
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-genlisp ros-groovy-genlisp
 
 master_sites        https://github.com/ros-gbp/genlisp-release/archive/release/indigo/genlisp/
 distfiles           0.4.13-0.tar.gz

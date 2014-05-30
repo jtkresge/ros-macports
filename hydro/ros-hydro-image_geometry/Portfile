@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-image_geometry
-version             1.10.9
-revision             0
+version             1.10.17
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:opencv \
                     port:ros-hydro-sensor_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-image_geometry ros-groovy-image_geometry
 
 master_sites        https://github.com/ros-gbp/vision_opencv-release/archive/release/hydro/image_geometry/
-distfiles           1.10.9-0.tar.gz
-worksrcdir          vision_opencv-release-release-hydro-image_geometry-1.10.9-0
-checksums           sha256 5f1735f6abd94d0952e385eccf4567c50ed1aaa5f278fbcbebb45246e1870a3f
+distfiles           1.10.17-1.tar.gz
+worksrcdir          vision_opencv-release-release-hydro-image_geometry-1.10.17-1
+checksums           sha256 f05cda4d6721d982d03fd8ebc99c1dd3306e1a3e788893a3019fb0ca632358e9
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

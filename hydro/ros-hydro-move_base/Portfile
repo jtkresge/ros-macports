@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-move_base
-version             1.11.4
-revision             2
+version             1.11.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,6 +17,7 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools \
                     port:ros-hydro-actionlib \
+                    port:ros-hydro-cmake_modules \
                     port:ros-hydro-costmap_2d \
                     port:ros-hydro-dynamic_reconfigure \
                     port:ros-hydro-geometry_msgs \
@@ -56,12 +57,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-tf \
                     port:ros-hydro-visualization_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-move_base ros-groovy-move_base
 
 master_sites        https://github.com/ros-gbp/navigation-release/archive/release/hydro/move_base/
-distfiles           1.11.4-2.tar.gz
-worksrcdir          navigation-release-release-hydro-move_base-1.11.4-2
-checksums           sha256 8278150a1c2e253cb8221c4635d40a6e03b26862e7e0371bcc73635b8869af3f
+distfiles           1.11.8-0.tar.gz
+worksrcdir          navigation-release-release-hydro-move_base-1.11.8-0
+checksums           sha256 a4d0062d839b877fa06e1e00d871b79166e6e15f81994df56329d14b925a197f
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

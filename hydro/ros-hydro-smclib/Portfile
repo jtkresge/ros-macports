@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-smclib
 version             1.7.13
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,9 +16,9 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
-                    port:ros-hydro-catkin 
+                    port:ros-hydro-catkin
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-smclib ros-groovy-smclib
 
 master_sites        https://github.com/ros-gbp/bond_core-release/archive/release/hydro/smclib/
 distfiles           1.7.13-0.tar.gz

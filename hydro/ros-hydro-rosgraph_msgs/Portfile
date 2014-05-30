@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rosgraph_msgs
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,12 +22,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_runtime \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rosgraph_msgs ros-groovy-rosgraph_msgs
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/rosgraph_msgs/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-rosgraph_msgs-1.9.50-0
-checksums           sha256 86caa67085f297f0ebfb2f49ffa2351a7927fbee61f0429a95e749ffa21e196c
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-rosgraph_msgs-1.10.2-0
+checksums           sha256 fad9f54b19b2099847ec7e001ef0bcb30addcb15aefe43d5b5ab9fdaba697993
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

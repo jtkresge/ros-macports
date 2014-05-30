@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-topic_tools
-version             1.9.50
-revision             0
+version             1.10.2
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -33,12 +33,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-std_msgs \
                     port:ros-hydro-xmlrpcpp
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-topic_tools ros-groovy-topic_tools
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/hydro/topic_tools/
-distfiles           1.9.50-0.tar.gz
-worksrcdir          ros_comm-release-release-hydro-topic_tools-1.9.50-0
-checksums           sha256 d5a6498ce182f8f01e3119d7b37cf36e8112ab543d09c1107f1ccce7616229fb
+distfiles           1.10.2-0.tar.gz
+worksrcdir          ros_comm-release-release-hydro-topic_tools-1.10.2-0
+checksums           sha256 91e9857a593c8a831cd5850f60dc319e6f60be3ecb506f0405115f26db0751ac
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

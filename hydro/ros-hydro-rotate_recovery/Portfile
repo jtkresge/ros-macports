@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-rotate_recovery
-version             1.11.4
-revision             2
+version             1.11.8
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -16,6 +16,7 @@ homepage            http://www.ros.org/
 
 depends_lib         port:python27 \
                     port:py27-setuptools \
+                    port:ros-hydro-cmake_modules \
                     port:ros-hydro-roscpp \
                     port:ros-hydro-tf \
                     port:ros-hydro-costmap_2d \
@@ -31,12 +32,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-pluginlib \
                     port:eigen3
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rotate_recovery ros-groovy-rotate_recovery
 
 master_sites        https://github.com/ros-gbp/navigation-release/archive/release/hydro/rotate_recovery/
-distfiles           1.11.4-2.tar.gz
-worksrcdir          navigation-release-release-hydro-rotate_recovery-1.11.4-2
-checksums           sha256 fb62e8a9cec5ceeca759c84e3c58577379e175e872c2c8b52dd0b2f7891990e6
+distfiles           1.11.8-0.tar.gz
+worksrcdir          navigation-release-release-hydro-rotate_recovery-1.11.8-0
+checksums           sha256 0694fc996558ee0090cd3a96b07eff10b7ad386650160a9e9c71a76e01574fca
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

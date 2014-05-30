@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-hydro-rviz_python_tutorial
 version             0.8.4
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -20,7 +20,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:ros-hydro-rviz
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-rviz_python_tutorial ros-groovy-rviz_python_tutorial
 
 master_sites        https://github.com/ros-gbp/visualization_tutorials-release/archive/release/hydro/rviz_python_tutorial/
 distfiles           0.8.4-0.tar.gz

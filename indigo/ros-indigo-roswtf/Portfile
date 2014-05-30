@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-roswtf
 version             1.11.3
-revision             0
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -25,9 +25,10 @@ depends_lib         port:python27 \
                     port:ros-indigo-roslaunch \
                     port:ros-indigo-roslib \
                     port:ros-indigo-rosnode \
-                    port:ros-indigo-rosservice
+                    port:ros-indigo-rosservice \
+                    port:ros-indigo-cmake_modules
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-roswtf ros-groovy-roswtf
 
 master_sites        https://github.com/ros-gbp/ros_comm-release/archive/release/indigo/roswtf/
 distfiles           1.11.3-0.tar.gz

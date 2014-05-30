@@ -4,8 +4,8 @@
 PortSystem          1.0
 
 name                ros-hydro-visualization_msgs
-version             1.10.2
-revision             0
+version             1.10.6
+revision            0
 categories          devel
 platforms           darwin
 license             bsd
@@ -24,12 +24,12 @@ depends_lib         port:python27 \
                     port:ros-hydro-message_runtime \
                     port:ros-hydro-std_msgs
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-indigo-visualization_msgs ros-groovy-visualization_msgs
 
 master_sites        https://github.com/ros-gbp/common_msgs-release/archive/release/hydro/visualization_msgs/
-distfiles           1.10.2-0.tar.gz
-worksrcdir          common_msgs-release-release-hydro-visualization_msgs-1.10.2-0
-checksums           sha256 473c1c5bf08221e533cfceb765f579449be25f05075d6f86b67ee992f2928fe2
+distfiles           1.10.6-0.tar.gz
+worksrcdir          common_msgs-release-release-hydro-visualization_msgs-1.10.6-0
+checksums           sha256 203e858fc6b88dfa4eb4fd1a8e01984bf01809b0f1add806664a6410a9a82062
 
 configure {}
 configure.cflags-append "-DBOOST_SIGNALS_NO_DEPRECATION_WARNING"

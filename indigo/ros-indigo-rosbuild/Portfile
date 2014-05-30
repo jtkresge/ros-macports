@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                ros-indigo-rosbuild
 version             1.11.1
-revision             1
+revision            1
 categories          devel
 platforms           darwin
 license             bsd
@@ -22,7 +22,7 @@ depends_lib         port:python27 \
                     port:ros-indigo-message_generation \
                     port:ros-indigo-message_runtime
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full
+conflicts           ros-hydro-rosbuild ros-groovy-rosbuild
 
 master_sites        https://github.com/ros-gbp/ros-release/archive/release/indigo/rosbuild/
 distfiles           1.11.1-1.tar.gz
