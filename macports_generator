@@ -172,8 +172,8 @@ def process_package(rosdistro, cachedir, deps_map, pkg, portdir, prefix,
     pkgname = manifest.getElementsByTagName("name")[0].lastChild.nodeValue
     version = manifest.getElementsByTagName("version")[0].lastChild.nodeValue
     print("==Processing package: {0}==".format(pkgname))
-    if format == 2:
-        build_deps = pull_depedencies_format2(manifest)
+    if format == "2":
+        build_deps = pull_depedencies_format2(manifest, deps_map, prefix)
     else:
         build_deps = pull_depedencies_format1(manifest, deps_map, prefix)
 
