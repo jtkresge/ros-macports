@@ -30,8 +30,11 @@ def parseargs():
 
 def download_file(url, dl_path):
     local_filename = os.path.join(dl_path,
-                                  url.split('/')[-2] + '-' + url.split('/')[
-                                      -1])
+                                  url.split('/')[-2] + '-' + url.split('/')[-1])
+    if os.path.isfile(local_filename):
+        print("Warning: exists, will not be download again")
+        return local_filename
+
     # NOTE the stream=True parameter
     r = requests.get(url, stream=True)
     with open(local_filename, 'wb') as f:

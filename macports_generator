@@ -13,6 +13,7 @@ import yaml
 from xml.dom import minidom as xml
 import re
 import hashlib
+import subprocess
 
 def readfile(file):
     with open(file) as f:
@@ -26,6 +27,9 @@ def writefile(fname, data):
 
 def parseargs():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--rosdistro",
+                        help="the rosdistro being processed",
+                        required=True)
     parser.add_argument("--rosinstall",
                         help="the rosinstall file which specifies what ports" \
                              "to generate",
@@ -53,8 +57,12 @@ def parseargs():
 def download_workspace(rosinstallfile, cachedir):
     if not os.path.exists(cachedir):
         os.mkdir(cachedir)
-    os.system("./rosports_downloader --rosinstall " + rosinstallfile +
-              " --workspace " + cachedir)
+    rtn = subprocess.call(["./rosports_downloader --rosinstall " + rosinstallfile +
+              " --workspace " + cachedir], shell=True)
+    if rtn != 0:
+        return -1
+
+    return 0
 
 
 def extract_workspace(cachedir):
@@ -78,69 +86,119 @@ def find_download_url(cachedir, pkgname):
         return f.readlines()[0]
 
 
-def process_package(cachedir, deps_map, pkg, portdir, prefix,
+def create_depedency_list(deps, deps_map, prefix):
+    for i in range(len(deps)):
+        if deps[i] in deps_map:
+            try:
+                print("Trying to map sys dep: {0}".format(deps[i]))
+                deps[i] = deps_map[deps[i]]["osx"]["macports"]["packages"][0]
+                print("Mapped dependency to: {0}".format(deps[i]))
+            except IndexError:
+                print("Error: needed port mapping not found in system-deps "
+                    "file. Please fix yaml mapping.")
+        else:
+            print ("Adding ros dependency: {0}".format(deps[i]))
+            deps[i] = prefix + deps[i]
+
+    return deps
+
+
+def pull_depedencies_format1(manifest, deps_map, prefix):
+    build_deps = [ele.lastChild.nodeValue for ele in
+                  manifest.getElementsByTagName("build_depend")]
+    depends = create_depedency_list(build_deps, deps_map, prefix)
+
+    buildtool_deps = [ele.lastChild.nodeValue for ele in
+                  manifest.getElementsByTagName("buildtool_depend")]
+    depends = depends + create_depedency_list(buildtool_deps, deps_map, prefix)
+
+    run_deps = [ele.lastChild.nodeValue for ele in
+                manifest.getElementsByTagName("run_depend")]
+    depends = depends + create_depedency_list(run_deps, deps_map, prefix)
+
+    test_deps = [ele.lastChild.nodeValue for ele in
+                manifest.getElementsByTagName("test_depend")]
+    depends = depends + create_depedency_list(test_deps, deps_map, prefix)
+
+    return depends
+
+
+def pull_depedencies_format2(manifest, deps_map, prefix):
+    build_deps = [ele.lastChild.nodeValue for ele in
+                  manifest.getElementsByTagName("build_depend")]
+    depends = create_depedency_list(build_deps, deps_map, prefix)
+
+    build_export_deps = [ele.lastChild.nodeValue for ele in
+                  manifest.getElementsByTagName("build_export_depend")]
+    depends = depends + create_depedency_list(build_export_deps, deps_map, prefix)
+
+    buildtool_deps = [ele.lastChild.nodeValue for ele in
+                  manifest.getElementsByTagName("buildtool_depend")]
+    depends = depends + create_depedency_list(buildtool_deps, deps_map, prefix)
+
+    buildtool_export_deps = [ele.lastChild.nodeValue for ele in
+                  manifest.getElementsByTagName("buildtool_export_depend")]
+    depends = depends + create_depedency_list(buildtool_export_deps, deps_map, prefix)
+
+    exec_deps = [ele.lastChild.nodeValue for ele in
+                  manifest.getElementsByTagName("exec_depend")]
+    depends = depends + create_depedency_list(exec_deps, deps_map, prefix)
+
+    run_deps = [ele.lastChild.nodeValue for ele in
+                manifest.getElementsByTagName("depend")]
+    depends = depends + create_depedency_list(run_deps, deps_map, prefix)
+
+    doc_deps = [ele.lastChild.nodeValue for ele in
+                manifest.getElementsByTagName("doc_depend")]
+    depends = depends + create_depedency_list(doc_deps, deps_map, prefix)
+
+    test_deps = [ele.lastChild.nodeValue for ele in
+                manifest.getElementsByTagName("test_depend")]
+    depends = depends + create_depedency_list(test_deps, deps_map, prefix)
+
+    return depends
+
+
+def process_package(rosdistro, cachedir, deps_map, pkg, portdir, prefix,
                     pkginstructions):
     """
     For the passed in package, generates a port in pordir using the supplied
     (already generated) cachedir, deps_map, and a prefix for package naming.
     """
     manifest = xml.parse(cachedir + "/" + pkg + "/package.xml")
+    format = 1
+    if manifest.getElementsByTagName("package")[0].hasAttribute("format"):
+        format = manifest.getElementsByTagName("package")[0].attributes["format"].value
     pkgname = manifest.getElementsByTagName("name")[0].lastChild.nodeValue
     version = manifest.getElementsByTagName("version")[0].lastChild.nodeValue
     print("==Processing package: {0}==".format(pkgname))
-    build_deps = [ele.lastChild.nodeValue for ele in
-                  manifest.getElementsByTagName("build_depend")]
-    run_deps = [ele.lastChild.nodeValue for ele in
-                manifest.getElementsByTagName("run_depend")]
-    for i in range(len(build_deps)):
-        if build_deps[i] in deps_map:
-            try:
-                print("Trying to map sys dep: {0}".format(build_deps[i]))
-                build_deps[i] = \
-                    deps_map[build_deps[i]]["osx"]["macports"]["packages"][0]
-                print("Mapped dependency to: {0}".format(build_deps[i]))
-            except IndexError:
-                print("Error: needed port mapping not found in "
-                      "system-deps file. Please fix yaml mapping.")
-        else:
-            print ("Adding ros dependency: {0}".format(build_deps[i]))
-            build_deps[i] = prefix + build_deps[i]
-    for i in range(len(run_deps)):
-        if run_deps[i] in deps_map:
-            try:
-                print("Trying to map sys dep: {0}".format(run_deps[i]))
-                run_deps[i] = \
-                    deps_map[run_deps[i]]["osx"]["macports"]["packages"][0]
-                print("Mapped dependency to: {0}".format(run_deps[i]))
-            except IndexError:
-                print("Error: needed port mapping not found in "
-                      "system-deps file. Please fix yaml mapping.")
-        else:
-            print ("Adding ros dependency: {0}".format(run_deps[i]))
-            run_deps[i] = prefix + run_deps[i]
+    if format == 2:
+        build_deps = pull_depedencies_format2(manifest)
+    else:
+        build_deps = pull_depedencies_format1(manifest, deps_map, prefix)
 
-    if pkgname != "catkin":
-        build_deps.append("ros-indigo-catkin")
+    #if pkgname != "catkin":
+    #    if rosdistro == "indigo":
+    #        build_deps.append("ros-indigo-catkin")
+    #    elif rosdistro == "hydro":
+    #        build_deps.append("ros-hydro-catkin")
+    #    elif rosdistro == "groovy":
+    #        build_deps.append("ros-groovy-catkin")
 
     url = find_download_url(cachedir, pkgname)
     # Whats life without a little golf
     url_base = "/".join(url.split("/")[:-1]) + "/"
     url_file = url.split("/")[-1]
-    revision = re.compile("\d+\.\d+\.\d+-(\d+)\.\D*").split(url_file)[1] 
+    revision = re.compile("\d+\.\d+\.\d+-(\d+)\.\D*").split(url_file)[1]
     checksum = hashlib.sha256(open(cachedir+"/"+pkgname+"-"+url_file,'rb').read()).hexdigest()
     # Add prefix
     build_deps_str = " \\\n                    port:".join(build_deps)
     if build_deps_str is not "":
         build_deps_str = "\\\n                    port:" + build_deps_str
-    run_deps_str = " \\\n                    port:".join(run_deps)
-    if run_deps_str is not "":
-        run_deps_str = "\\\n                    port:" + run_deps_str
-    print (pkgname + " run_depends: " + run_deps_str)
     print (pkgname + " build_depends: " + build_deps_str)
     template = readfile("Portfile-template")
     template = template.replace("$$fullname$$", prefix + pkgname)
     template = template.replace("$$extract_dir$$", pkg)
-    template = template.replace("$$run_depends$$", run_deps_str)
     template = template.replace("$$build_depends$$", build_deps_str)
     template = template.replace("$$url_base$$", url_base)
     template = template.replace("$$url_file$$", url_file)
@@ -193,7 +251,7 @@ def process_package(cachedir, deps_map, pkg, portdir, prefix,
                                     "     file delete -force ${destroot}/opt/local/etc/catkin/profile.d/05.catkin_make.bash\n"
                                     "     file delete -force ${destroot}/opt/local/etc/catkin/profile.d/05.catkin_make_isolated.bash\n"
         )
-        # Make ports
+    # Make ports
     if not os.path.exists(portdir):
         os.mkdir(portdir)
     if not os.path.exists(portdir + "/" + prefix + pkgname):
@@ -207,7 +265,14 @@ def generate_ports():
     """
     args = parseargs()
 
-    prefix = "ros-indigo-"
+    rosdistro = args.rosdistro
+    prefix = ""
+    if rosdistro == "indigo":
+        prefix = "ros-indigo-"
+    elif rosdistro == "hydro":
+        prefix = "ros-hydro-"
+    elif rosdistro == "groovy":
+        prefix = "ros-groovy-"
     portdir = args.port_dir
     force_download = args.force_download
     sysdepsfile = args.system_deps
@@ -215,12 +280,12 @@ def generate_ports():
     rosinstallfile = args.rosinstall
     cachedir = "cache"
 
-    if os.path.exists(cachedir) and not force_download:
-        print("Warning: not redownloading workspace, cache exists.")
     if os.path.exists(cachedir) and force_download:
         shutil.rmtree(cachedir)
-    if not os.path.exists(cachedir):
-        download_workspace(rosinstallfile, cachedir)
+
+    if download_workspace(rosinstallfile, cachedir) != 0:
+        print("Error: unable to download entire workspace")
+        return -1
 
     extract_workspace(cachedir)
 
@@ -233,7 +298,7 @@ def generate_ports():
     pkginstructions = yaml.load(open(pkginstructionsfile))
 
     for pkg in pkgs:
-        process_package(cachedir, deps_map, pkg, portdir, prefix,
+        process_package(rosdistro, cachedir, deps_map, pkg, portdir, prefix,
                         pkginstructions)
 
 
