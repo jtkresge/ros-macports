@@ -177,19 +177,14 @@ def process_package(rosdistro, cachedir, deps_map, pkg, portdir, prefix,
     else:
         build_deps = pull_depedencies_format1(manifest, deps_map, prefix)
 
-    #if pkgname != "catkin":
-    #    if rosdistro == "indigo":
-    #        build_deps.append("ros-indigo-catkin")
-    #    elif rosdistro == "hydro":
-    #        build_deps.append("ros-hydro-catkin")
-    #    elif rosdistro == "groovy":
-    #        build_deps.append("ros-groovy-catkin")
-
     url = find_download_url(cachedir, pkgname)
     # Whats life without a little golf
     url_base = "/".join(url.split("/")[:-1]) + "/"
     url_file = url.split("/")[-1]
-    revision = re.compile("\d+\.\d+\.\d+-(\d+)\.\D*").split(url_file)[1]
+    try:
+        revision = re.compile("\d+\.\d+\.\d+-(\d+)\.\D*").split(url_file)[1]
+    except IndexError:
+        revision = "0"
     checksum = hashlib.sha256(open(cachedir+"/"+pkgname+"-"+url_file,'rb').read()).hexdigest()
     # Add prefix
     build_deps_str = " \\\n                    port:".join(build_deps)
