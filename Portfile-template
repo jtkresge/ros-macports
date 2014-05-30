@@ -5,7 +5,7 @@ PortSystem          1.0
 
 name                $$fullname$$
 version             $$version$$
-revision             $$revision$$
+revision            $$revision$$
 categories          devel
 platforms           darwin
 license             bsd
@@ -17,7 +17,7 @@ homepage            http://www.ros.org/
 depends_lib         port:python27 \
                     port:py27-setuptools $$build_depends$$
 
-conflicts           ros-core ros-desktop ros-groovy-core ros-groovy ros-groovy-desktop-full ros-hydro-core ros-hydro ros-hydro-desktop-full
+conflicts           $$conflicts$$
 
 master_sites        $$url_base$$
 distfiles           $$url_file$$
