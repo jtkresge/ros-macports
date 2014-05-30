@@ -19,7 +19,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:py27-netifaces \
                     port:py27-rospkg \
-                    port:ros-hydro-python-mock
+                    port:py27-mock
 
 conflicts           ros-indigo-rosgraph ros-groovy-rosgraph
 

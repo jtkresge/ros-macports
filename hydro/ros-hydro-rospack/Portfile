@@ -29,7 +29,7 @@ depends_lib         port:python27 \
                     port:py27-catkin-pkg \
                     port:py27-rosdep \
                     port:tinyxml \
-                    port:ros-hydro-python-coverage
+                    port:py27-coverage
 
 conflicts           ros-indigo-rospack ros-groovy-rospack
 
