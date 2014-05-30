@@ -1,0 +1,729 @@
+- git:
+    local-name: actionlib
+    uri: https://github.com/ros-gbp/actionlib-release.git
+    version: release/groovy/actionlib/1.9.13-0
+- git:
+    local-name: angles
+    uri: https://github.com/ros-gbp/geometry_angles_utils-release.git
+    version: release/groovy/angles/1.9.8-0
+- git:
+    local-name: bfl
+    uri: https://github.com/ros-gbp/bfl-release.git
+    version: release/groovy/bfl/0.7.0-7
+- git:
+    local-name: bond_core/bond
+    uri: https://github.com/ros-gbp/bond_core-release.git
+    version: release/groovy/bond/1.7.13-0
+- git:
+    local-name: bond_core/bond_core
+    uri: https://github.com/ros-gbp/bond_core-release.git
+    version: release/groovy/bond_core/1.7.13-0
+- git:
+    local-name: bond_core/bondcpp
+    uri: https://github.com/ros-gbp/bond_core-release.git
+    version: release/groovy/bondcpp/1.7.13-0
+- git:
+    local-name: bond_core/bondpy
+    uri: https://github.com/ros-gbp/bond_core-release.git
+    version: release/groovy/bondpy/1.7.13-0
+- git:
+    local-name: bond_core/smclib
+    uri: https://github.com/ros-gbp/bond_core-release.git
+    version: release/groovy/smclib/1.7.13-0
+- git:
+    local-name: catkin
+    uri: https://github.com/ros-gbp/catkin-release.git
+    version: release/groovy/catkin/0.5.86-0
+- git:
+    local-name: class_loader
+    uri: https://github.com/ros-gbp/class_loader-release.git
+    version: release/groovy/class_loader/0.1.31-0
+- git:
+    local-name: common_msgs/actionlib_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/actionlib_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/common_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/common_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/diagnostic_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/diagnostic_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/geometry_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/geometry_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/nav_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/nav_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/sensor_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/sensor_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/shape_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/shape_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/stereo_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/stereo_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/trajectory_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/trajectory_msgs/1.9.21-0
+- git:
+    local-name: common_msgs/visualization_msgs
+    uri: https://github.com/ros-gbp/common_msgs-release.git
+    version: release/groovy/visualization_msgs/1.9.21-0
+- git:
+    local-name: console_bridge
+    uri: https://github.com/ros-gbp/console_bridge-release.git
+    version: release/groovy/console_bridge/0.2.4-0
+- git:
+    local-name: convex_decomposition
+    uri: https://github.com/ros-gbp/convex_decomposition-release.git
+    version: release/convex_decomposition/0.1.9
+- git:
+    local-name: diagnostics/diagnostic_aggregator
+    uri: https://github.com/ros-gbp/diagnostics-release.git
+    version: release/diagnostic_aggregator/1.7.10
+- git:
+    local-name: diagnostics/diagnostic_analysis
+    uri: https://github.com/ros-gbp/diagnostics-release.git
+    version: release/diagnostic_analysis/1.7.10
+- git:
+    local-name: diagnostics/diagnostic_common_diagnostics
+    uri: https://github.com/ros-gbp/diagnostics-release.git
+    version: release/diagnostic_common_diagnostics/1.7.10
+- git:
+    local-name: diagnostics/diagnostic_updater
+    uri: https://github.com/ros-gbp/diagnostics-release.git
+    version: release/diagnostic_updater/1.7.10
+- git:
+    local-name: diagnostics/diagnostics
+    uri: https://github.com/ros-gbp/diagnostics-release.git
+    version: release/diagnostics/1.7.10
+- git:
+    local-name: diagnostics/self_test
+    uri: https://github.com/ros-gbp/diagnostics-release.git
+    version: release/self_test/1.7.10
+- git:
+    local-name: driver_common/driver_base
+    uri: https://github.com/ros-gbp/driver_common-release.git
+    version: release/groovy/driver_base/1.6.6-0
+- git:
+    local-name: driver_common/driver_common
+    uri: https://github.com/ros-gbp/driver_common-release.git
+    version: release/groovy/driver_common/1.6.6-0
+- git:
+    local-name: driver_common/timestamp_tools
+    uri: https://github.com/ros-gbp/driver_common-release.git
+    version: release/groovy/timestamp_tools/1.6.6-0
+- git:
+    local-name: dynamic_reconfigure
+    uri: https://github.com/ros-gbp/dynamic_reconfigure-release.git
+    version: release/groovy/dynamic_reconfigure/1.5.34-0
+- git:
+    local-name: flann
+    uri: https://github.com/ros-gbp/flann-release.git
+    version: release/flann/1.7.1
+- git:
+    local-name: gencpp
+    uri: https://github.com/ros-gbp/gencpp-release.git
+    version: release/groovy/gencpp/0.4.17-0
+- git:
+    local-name: genlisp
+    uri: https://github.com/ros-gbp/genlisp-release.git
+    version: release/groovy/genlisp/0.4.12-0
+- git:
+    local-name: genmsg
+    uri: https://github.com/ros-gbp/genmsg-release.git
+    version: release/groovy/genmsg/0.4.25-0
+- git:
+    local-name: genpy
+    uri: https://github.com/ros-gbp/genpy-release.git
+    version: release/groovy/genpy/0.4.16-0
+- git:
+    local-name: geometry/eigen_conversions
+    uri: https://github.com/ros-gbp/geometry-release.git
+    version: release/groovy/eigen_conversions/1.9.31-0
+- git:
+    local-name: geometry/geometry
+    uri: https://github.com/ros-gbp/geometry-release.git
+    version: release/groovy/geometry/1.9.31-0
+- git:
+    local-name: geometry/kdl_conversions
+    uri: https://github.com/ros-gbp/geometry-release.git
+    version: release/groovy/kdl_conversions/1.9.31-0
+- git:
+    local-name: geometry/tf
+    uri: https://github.com/ros-gbp/geometry-release.git
+    version: release/groovy/tf/1.9.31-0
+- git:
+    local-name: geometry/tf_conversions
+    uri: https://github.com/ros-gbp/geometry-release.git
+    version: release/groovy/tf_conversions/1.9.31-0
+- git:
+    local-name: geometry_experimental/geometry_experimental
+    uri: https://github.com/ros-gbp/geometry_experimental-release.git
+    version: release/groovy/geometry_experimental/0.3.7-0
+- git:
+    local-name: geometry_experimental/tf2
+    uri: https://github.com/ros-gbp/geometry_experimental-release.git
+    version: release/groovy/tf2/0.3.7-0
+- git:
+    local-name: geometry_experimental/tf2_geometry_msgs
+    uri: https://github.com/ros-gbp/geometry_experimental-release.git
+    version: release/groovy/tf2_geometry_msgs/0.3.7-0
+- git:
+    local-name: geometry_experimental/tf2_kdl
+    uri: https://github.com/ros-gbp/geometry_experimental-release.git
+    version: release/groovy/tf2_kdl/0.3.7-0
+- git:
+    local-name: geometry_experimental/tf2_msgs
+    uri: https://github.com/ros-gbp/geometry_experimental-release.git
+    version: release/groovy/tf2_msgs/0.3.7-0
+- git:
+    local-name: geometry_experimental/tf2_ros
+    uri: https://github.com/ros-gbp/geometry_experimental-release.git
+    version: release/groovy/tf2_ros/0.3.7-0
+- git:
+    local-name: geometry_experimental/tf2_tools
+    uri: https://github.com/ros-gbp/geometry_experimental-release.git
+    version: release/groovy/tf2_tools/0.3.7-0
+- git:
+    local-name: image_common/camera_calibration_parsers
+    uri: https://github.com/ros-gbp/image_common-release.git
+    version: release/groovy/camera_calibration_parsers/1.10.5-0
+- git:
+    local-name: image_common/camera_info_manager
+    uri: https://github.com/ros-gbp/image_common-release.git
+    version: release/groovy/camera_info_manager/1.10.5-0
+- git:
+    local-name: image_common/image_common
+    uri: https://github.com/ros-gbp/image_common-release.git
+    version: release/groovy/image_common/1.10.5-0
+- git:
+    local-name: image_common/image_transport
+    uri: https://github.com/ros-gbp/image_common-release.git
+    version: release/groovy/image_transport/1.10.5-0
+- git:
+    local-name: image_common/polled_camera
+    uri: https://github.com/ros-gbp/image_common-release.git
+    version: release/groovy/polled_camera/1.10.5-0
+- git:
+    local-name: image_pipeline/camera_calibration
+    uri: https://github.com/ros-gbp/image_pipeline-release.git
+    version: release/groovy/camera_calibration/1.10.17-0
+- git:
+    local-name: image_pipeline/depth_image_proc
+    uri: https://github.com/ros-gbp/image_pipeline-release.git
+    version: release/groovy/depth_image_proc/1.10.17-0
+- git:
+    local-name: image_pipeline/image_pipeline
+    uri: https://github.com/ros-gbp/image_pipeline-release.git
+    version: release/groovy/image_pipeline/1.10.17-0
+- git:
+    local-name: image_pipeline/image_proc
+    uri: https://github.com/ros-gbp/image_pipeline-release.git
+    version: release/groovy/image_proc/1.10.17-0
+- git:
+    local-name: image_pipeline/image_rotate
+    uri: https://github.com/ros-gbp/image_pipeline-release.git
+    version: release/groovy/image_rotate/1.10.17-0
+- git:
+    local-name: image_pipeline/image_view
+    uri: https://github.com/ros-gbp/image_pipeline-release.git
+    version: release/groovy/image_view/1.10.17-0
+- git:
+    local-name: image_pipeline/stereo_image_proc
+    uri: https://github.com/ros-gbp/image_pipeline-release.git
+    version: release/groovy/stereo_image_proc/1.10.17-0
+- git:
+    local-name: image_transport_plugins/compressed_depth_image_transport
+    uri: https://github.com/ros-gbp/image_transport_plugins-release.git
+    version: release/groovy/compressed_depth_image_transport/1.8.21-1
+- git:
+    local-name: image_transport_plugins/compressed_image_transport
+    uri: https://github.com/ros-gbp/image_transport_plugins-release.git
+    version: release/groovy/compressed_image_transport/1.8.21-1
+- git:
+    local-name: image_transport_plugins/image_transport_plugins
+    uri: https://github.com/ros-gbp/image_transport_plugins-release.git
+    version: release/groovy/image_transport_plugins/1.8.21-1
+- git:
+    local-name: image_transport_plugins/theora_image_transport
+    uri: https://github.com/ros-gbp/image_transport_plugins-release.git
+    version: release/groovy/theora_image_transport/1.8.21-1
+- git:
+    local-name: interactive_markers
+    uri: https://github.com/ros-gbp/interactive_markers-release.git
+    version: release/groovy/interactive_markers/1.9.10-0
+- git:
+    local-name: ivcon
+    uri: https://github.com/ros-gbp/ivcon-release.git
+    version: release/ivcon/0.1.4
+- git:
+    local-name: laser_geometry
+    uri: https://github.com/ros-gbp/laser_geometry-release.git
+    version: release/groovy/laser_geometry/1.5.15-0
+- git:
+    local-name: message_generation
+    uri: https://github.com/ros-gbp/message_generation-release.git
+    version: release/groovy/message_generation/0.2.10-0
+- git:
+    local-name: message_runtime
+    uri: https://github.com/ros-gbp/message_runtime-release.git
+    version: release/groovy/message_runtime/0.4.12-0
+- git:
+    local-name: nodelet_core/nodelet
+    uri: https://github.com/ros-gbp/nodelet_core-release.git
+    version: release/groovy/nodelet/1.7.18-0
+- git:
+    local-name: nodelet_core/nodelet_core
+    uri: https://github.com/ros-gbp/nodelet_core-release.git
+    version: release/groovy/nodelet_core/1.7.18-0
+- git:
+    local-name: nodelet_core/nodelet_topic_tools
+    uri: https://github.com/ros-gbp/nodelet_core-release.git
+    version: release/groovy/nodelet_topic_tools/1.7.18-0
+- git:
+    local-name: opencv2
+    uri: https://github.com/ros-gbp/opencv2-release.git
+    version: release/groovy/opencv2/2.4.6-1
+- git:
+    local-name: pcl
+    uri: https://github.com/ros-gbp/pcl-release.git
+    version: release/pcl/1.6.0
+- git:
+    local-name: pcl_msgs
+    uri: https://github.com/ros-gbp/pcl_msgs-release.git
+    version: release/groovy/pcl_msgs/0.0.4-0
+- git:
+    local-name: perception_pcl/pcl_ros
+    uri: https://github.com/ros-gbp/perception_pcl-release.git
+    version: release/groovy/pcl_ros/1.0.36-0
+- git:
+    local-name: perception_pcl/perception_pcl
+    uri: https://github.com/ros-gbp/perception_pcl-release.git
+    version: release/groovy/perception_pcl/1.0.36-0
+- git:
+    local-name: pluginlib
+    uri: https://github.com/ros-gbp/pluginlib-release.git
+    version: release/groovy/pluginlib/1.9.24-0
+- git:
+    local-name: python_qt_binding
+    uri: https://github.com/ros-gbp/python_qt_binding-release.git
+    version: release/groovy/python_qt_binding/0.2.12-0
+- git:
+    local-name: qt_gui_core/qt_dotgraph
+    uri: https://github.com/ros-gbp/qt_gui_core-release.git
+    version: release/groovy/qt_dotgraph/0.2.22-0
+- git:
+    local-name: qt_gui_core/qt_gui
+    uri: https://github.com/ros-gbp/qt_gui_core-release.git
+    version: release/groovy/qt_gui/0.2.22-0
+- git:
+    local-name: qt_gui_core/qt_gui_app
+    uri: https://github.com/ros-gbp/qt_gui_core-release.git
+    version: release/groovy/qt_gui_app/0.2.22-0
+- git:
+    local-name: qt_gui_core/qt_gui_core
+    uri: https://github.com/ros-gbp/qt_gui_core-release.git
+    version: release/groovy/qt_gui_core/0.2.22-0
+- git:
+    local-name: qt_gui_core/qt_gui_cpp
+    uri: https://github.com/ros-gbp/qt_gui_core-release.git
+    version: release/groovy/qt_gui_cpp/0.2.22-0
+- git:
+    local-name: qt_gui_core/qt_gui_py_common
+    uri: https://github.com/ros-gbp/qt_gui_core-release.git
+    version: release/groovy/qt_gui_py_common/0.2.22-0
+- git:
+    local-name: robot_model/collada_parser
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/collada_parser/1.9.36-0
+- git:
+    local-name: robot_model/collada_urdf
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/collada_urdf/1.9.36-0
+- git:
+    local-name: robot_model/kdl_parser
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/kdl_parser/1.9.36-0
+- git:
+    local-name: robot_model/resource_retriever
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/resource_retriever/1.9.36-0
+- git:
+    local-name: robot_model/robot_model
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/robot_model/1.9.36-0
+- git:
+    local-name: robot_model/srdf
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/srdf/1.9.36-0
+- git:
+    local-name: robot_model/urdf
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/urdf/1.9.36-0
+- git:
+    local-name: robot_model/urdf_interface
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/urdf_interface/1.9.36-0
+- git:
+    local-name: robot_model/urdf_parser
+    uri: https://github.com/ros-gbp/robot_model-release.git
+    version: release/groovy/urdf_parser/1.9.36-0
+- git:
+    local-name: robot_state_publisher
+    uri: https://github.com/ros-gbp/robot_state_publisher-release.git
+    version: release/groovy/robot_state_publisher/1.9.9-0
+- git:
+    local-name: ros/mk
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/mk/1.9.53-0
+- git:
+    local-name: ros/ros
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/ros/1.9.53-0
+- git:
+    local-name: ros/rosbash
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/rosbash/1.9.53-0
+- git:
+    local-name: ros/rosboost_cfg
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/rosboost_cfg/1.9.53-0
+- git:
+    local-name: ros/rosbuild
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/rosbuild/1.9.53-0
+- git:
+    local-name: ros/rosclean
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/rosclean/1.9.53-0
+- git:
+    local-name: ros/roscreate
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/roscreate/1.9.53-0
+- git:
+    local-name: ros/roslang
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/roslang/1.9.53-0
+- git:
+    local-name: ros/roslib
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/roslib/1.9.53-0
+- git:
+    local-name: ros/rosmake
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/rosmake/1.9.53-0
+- git:
+    local-name: ros/rosunit
+    uri: https://github.com/ros-gbp/ros-release.git
+    version: release/groovy/rosunit/1.9.53-0
+- git:
+    local-name: ros_comm/message_filters
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/message_filters/1.9.55-0
+- git:
+    local-name: ros_comm/ros_comm
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/ros_comm/1.9.55-0
+- git:
+    local-name: ros_comm/rosbag
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosbag/1.9.55-0
+- git:
+    local-name: ros_comm/rosconsole
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosconsole/1.9.55-0
+- git:
+    local-name: ros_comm/roscpp
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/roscpp/1.9.55-0
+- git:
+    local-name: ros_comm/rosgraph
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosgraph/1.9.55-0
+- git:
+    local-name: ros_comm/rosgraph_msgs
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosgraph_msgs/1.9.55-0
+- git:
+    local-name: ros_comm/roslaunch
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/roslaunch/1.9.55-0
+- git:
+    local-name: ros_comm/rosmaster
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosmaster/1.9.55-0
+- git:
+    local-name: ros_comm/rosmsg
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosmsg/1.9.55-0
+- git:
+    local-name: ros_comm/rosnode
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosnode/1.9.55-0
+- git:
+    local-name: ros_comm/rosout
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosout/1.9.55-0
+- git:
+    local-name: ros_comm/rosparam
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosparam/1.9.55-0
+- git:
+    local-name: ros_comm/rospy
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rospy/1.9.55-0
+- git:
+    local-name: ros_comm/rosservice
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rosservice/1.9.55-0
+- git:
+    local-name: ros_comm/rostest
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rostest/1.9.55-0
+- git:
+    local-name: ros_comm/rostopic
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/rostopic/1.9.55-0
+- git:
+    local-name: ros_comm/roswtf
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/roswtf/1.9.55-0
+- git:
+    local-name: ros_comm/std_srvs
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/std_srvs/1.9.55-0
+- git:
+    local-name: ros_comm/topic_tools
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/topic_tools/1.9.55-0
+- git:
+    local-name: ros_comm/xmlrpcpp
+    uri: https://github.com/ros-gbp/ros_comm-release.git
+    version: release/groovy/xmlrpcpp/1.9.55-0
+- git:
+    local-name: ros_tutorials/ros_tutorials
+    uri: https://github.com/ros-gbp/ros_tutorials-release.git
+    version: release/groovy/ros_tutorials/0.3.13-0
+- git:
+    local-name: ros_tutorials/roscpp_tutorials
+    uri: https://github.com/ros-gbp/ros_tutorials-release.git
+    version: release/groovy/roscpp_tutorials/0.3.13-0
+- git:
+    local-name: ros_tutorials/rospy_tutorials
+    uri: https://github.com/ros-gbp/ros_tutorials-release.git
+    version: release/groovy/rospy_tutorials/0.3.13-0
+- git:
+    local-name: ros_tutorials/turtlesim
+    uri: https://github.com/ros-gbp/ros_tutorials-release.git
+    version: release/groovy/turtlesim/0.3.13-0
+- git:
+    local-name: rosconsole_bridge
+    uri: https://github.com/ros-gbp/rosconsole_bridge-release.git
+    version: release/groovy/rosconsole_bridge/0.2.7-0
+- git:
+    local-name: roscpp_core/cpp_common
+    uri: https://github.com/ros-gbp/roscpp_core-release.git
+    version: release/groovy/cpp_common/0.3.16-0
+- git:
+    local-name: roscpp_core/roscpp_serialization
+    uri: https://github.com/ros-gbp/roscpp_core-release.git
+    version: release/groovy/roscpp_serialization/0.3.16-0
+- git:
+    local-name: roscpp_core/roscpp_traits
+    uri: https://github.com/ros-gbp/roscpp_core-release.git
+    version: release/groovy/roscpp_traits/0.3.16-0
+- git:
+    local-name: roscpp_core/rostime
+    uri: https://github.com/ros-gbp/roscpp_core-release.git
+    version: release/groovy/rostime/0.3.16-0
+- git:
+    local-name: roslisp
+    uri: https://github.com/ros-gbp/roslisp-release.git
+    version: release/groovy/roslisp/1.9.15-0
+- git:
+    local-name: rospack
+    uri: https://github.com/ros-gbp/rospack-release.git
+    version: release/groovy/rospack/2.1.23-0
+- git:
+    local-name: rqt/rqt_gui
+    uri: https://github.com/ros-gbp/rqt-release.git
+    version: release/groovy/rqt_gui/0.2.14-0
+- git:
+    local-name: rqt/rqt_gui_cpp
+    uri: https://github.com/ros-gbp/rqt-release.git
+    version: release/groovy/rqt_gui_cpp/0.2.14-0
+- git:
+    local-name: rqt/rqt_gui_py
+    uri: https://github.com/ros-gbp/rqt-release.git
+    version: release/groovy/rqt_gui_py/0.2.14-0
+- git:
+    local-name: rqt_common_plugins/rqt_action
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_action/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_bag
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_bag/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_bag_plugins
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_bag_plugins/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_common_plugins
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_common_plugins/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_console
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_console/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_dep
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_dep/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_graph
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_graph/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_image_view
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_image_view/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_launch
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_launch/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_logger_level
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_logger_level/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_msg
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_msg/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_plot
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_plot/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_publisher
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_publisher/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_py_common
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_py_common/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_py_console
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_py_console/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_reconfigure
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_reconfigure/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_service_caller
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_service_caller/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_shell
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_shell/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_srv
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_srv/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_top
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_top/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_topic
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_topic/0.3.4-0
+- git:
+    local-name: rqt_common_plugins/rqt_web
+    uri: https://github.com/ros-gbp/rqt_common_plugins-release.git
+    version: release/groovy/rqt_web/0.3.4-0
+- git:
+    local-name: rqt_robot_plugins/rqt_moveit
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_moveit/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_nav_view
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_nav_view/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_pose_view
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_pose_view/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_robot_dashboard
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_robot_dashboard/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_robot_monitor
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_robot_monitor/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_robot_plugins
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_robot_plugins/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_robot_steering
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_robot_steering/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_runtime_monitor
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_runtime_monitor/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_rviz
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_rviz/0.3.3-0
+- git:
+    local-name: rqt_robot_plugins/rqt_tf_tree
+    uri: https://github.com/ros-gbp/rqt_robot_plugins-release.git
+    version: release/groovy/rqt_tf_tree/0.3.3-0
+- git:
+    local-name: rviz
+    uri: https://github.com/ros-gbp/rviz-release.git
+    version: release/groovy/rviz/1.9.36-0
+- git:
+    local-name: srdfdom
+    uri: https://github.com/ros-gbp/srdfdom-release.git
+    version: release/groovy/srdfdom/0.2.6-0
+- git:
+    local-name: std_msgs
+    uri: https://github.com/ros-gbp/std_msgs-release.git
+    version: release/groovy/std_msgs/0.5.8-0
+- git:
+    local-name: urdfdom
+    uri: https://github.com/ros-gbp/urdfdom-release.git
+    version: release/groovy/urdfdom/0.2.8-2
+- git:
+    local-name: urdfdom_headers
+    uri: https://github.com/ros-gbp/urdfdom_headers-release.git
+    version: release/groovy/urdfdom_headers/0.2.3-2
+- git:
+    local-name: vision_opencv/cv_bridge
+    uri: https://github.com/ros-gbp/vision_opencv-release.git
+    version: release/groovy/cv_bridge/1.10.17-0
+- git:
+    local-name: vision_opencv/image_geometry
+    uri: https://github.com/ros-gbp/vision_opencv-release.git
+    version: release/groovy/image_geometry/1.10.17-0
+- git:
+    local-name: vision_opencv/vision_opencv
+    uri: https://github.com/ros-gbp/vision_opencv-release.git
+    version: release/groovy/vision_opencv/1.10.17-0
+

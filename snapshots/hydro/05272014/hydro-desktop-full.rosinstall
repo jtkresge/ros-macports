@@ -109,7 +109,7 @@
 - git:
     local-name: control_msgs
     uri: https://github.com/ros-gbp/control_msgs-release.git
-    version: release/hydro/control_msgs/1.2.0-0
+    version: release/hydro/control_msgs/1.2.0-1
 - git:
     local-name: diagnostics/diagnostic_aggregator
     uri: https://github.com/ros-gbp/diagnostics-release.git
@@ -277,23 +277,23 @@
 - git:
     local-name: image_common/camera_calibration_parsers
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/hydro/camera_calibration_parsers/1.11.3-0
+    version: release/hydro/camera_calibration_parsers/1.11.3-1
 - git:
     local-name: image_common/camera_info_manager
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/hydro/camera_info_manager/1.11.3-0
+    version: release/hydro/camera_info_manager/1.11.3-1
 - git:
     local-name: image_common/image_common
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/hydro/image_common/1.11.3-0
+    version: release/hydro/image_common/1.11.3-1
 - git:
     local-name: image_common/image_transport
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/hydro/image_transport/1.11.3-0
+    version: release/hydro/image_transport/1.11.3-1
 - git:
     local-name: image_common/polled_camera
     uri: https://github.com/ros-gbp/image_common-release.git
-    version: release/hydro/polled_camera/1.11.3-0
+    version: release/hydro/polled_camera/1.11.3-1
 - git:
     local-name: image_pipeline/camera_calibration
     uri: https://github.com/ros-gbp/image_pipeline-release.git
@@ -493,7 +493,7 @@
 - git:
     local-name: octomap/octomap
     uri: https://github.com/ros-gbp/octomap-release.git
-    version: release/hydro/octomap/1.6.4-0
+    version: release/hydro/octomap/1.6.6-0
 - git:
     local-name: opencv2
     uri: https://github.com/ros-gbp/opencv2-release.git

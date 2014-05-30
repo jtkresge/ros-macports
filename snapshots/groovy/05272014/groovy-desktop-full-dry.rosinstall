@@ -1,0 +1,85 @@
+- tar:
+    local-name: bullet
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/bullet/bullet-2.80/bullet-2.80.tar.bz2
+    version: bullet-2.80
+- tar:
+    local-name: common
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/common/common-1.8.0/common-1.8.0.tar.bz2
+    version: common-1.8.0
+- tar:
+    local-name: common_rosdeps
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/common_rosdeps/common_rosdeps-1.2.0/common_rosdeps-1.2.0.tar.bz2
+    version: common_rosdeps-1.2.0
+- tar:
+    local-name: common_tutorials
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/common_tutorials/common_tutorials-0.2.3/common_tutorials-0.2.3.tar.bz2
+    version: common_tutorials-0.2.3
+- tar:
+    local-name: documentation
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/documentation/documentation-1.5.3/documentation-1.5.3.tar.bz2
+    version: documentation-1.5.3
+- tar:
+    local-name: executive_smach
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/executive_smach/executive_smach-1.2.2/executive_smach-1.2.2.tar.bz2
+    version: executive_smach-1.2.2
+- tar:
+    local-name: filters
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/filters/filters-1.6.0/filters-1.6.0.tar.bz2
+    version: filters-1.6.0
+- tar:
+    local-name: geometry_tutorials
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/geometry_tutorials/geometry_tutorials-0.1.3/geometry_tutorials-0.1.3.tar.bz2
+    version: geometry_tutorials-0.1.3
+- tar:
+    local-name: laser_assembler
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/laser_assembler/laser_assembler-1.5.5/laser_assembler-1.5.5.tar.bz2
+    version: laser_assembler-1.5.5
+- tar:
+    local-name: laser_filters
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/laser_filters/laser_filters-1.5.7/laser_filters-1.5.7.tar.bz2
+    version: laser_filters-1.5.7
+- tar:
+    local-name: laser_pipeline
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/laser_pipeline/laser_pipeline-1.5.5/laser_pipeline-1.5.5.tar.bz2
+    version: laser_pipeline-1.5.5
+- tar:
+    local-name: navigation
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/navigation/navigation-1.10.3/navigation-1.10.3.tar.bz2
+    version: navigation-1.10.3
+- tar:
+    local-name: navigation_tutorials
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/navigation_tutorials/navigation_tutorials-0.1.1/navigation_tutorials-0.1.1.tar.bz2
+    version: navigation_tutorials-0.1.1
+- tar:
+    local-name: physics_ode
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/physics_ode/physics_ode-1.8.0/physics_ode-1.8.0.tar.bz2
+    version: physics_ode-1.8.0
+- tar:
+    local-name: robot_model_tutorials
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/robot_model_tutorials/robot_model_tutorials-0.1.2/robot_model_tutorials-0.1.2.tar.bz2
+    version: robot_model_tutorials-0.1.2
+- tar:
+    local-name: robot_model_visualization
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/robot_model_visualization/robot_model_visualization-0.1.2/robot_model_visualization-0.1.2.tar.bz2
+    version: robot_model_visualization-0.1.2
+- tar:
+    local-name: simulator_gazebo
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/simulator_gazebo/simulator_gazebo-1.7.13/simulator_gazebo-1.7.13.tar.bz2
+    version: simulator_gazebo-1.7.13
+- tar:
+    local-name: slam_gmapping
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/slam_gmapping/slam_gmapping-1.2.8/slam_gmapping-1.2.8.tar.bz2
+    version: slam_gmapping-1.2.8
+- tar:
+    local-name: stage
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/stage/stage-1.6.7/stage-1.6.7.tar.bz2
+    version: stage-1.6.7
+- tar:
+    local-name: visualization_tutorials
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/visualization_tutorials/visualization_tutorials-0.7.6/visualization_tutorials-0.7.6.tar.bz2
+    version: visualization_tutorials-0.7.6
+- tar:
+    local-name: xacro
+    uri: http://ros-dry-releases.googlecode.com/svn/download/stacks/xacro/xacro-1.7.5/xacro-1.7.5.tar.bz2
+    version: xacro-1.7.5
+
