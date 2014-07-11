@@ -19,7 +19,7 @@ depends_lib         port:python27 \
                     port:apr \
                     port:boost \
                     port:ros-hydro-cpp_common \
-                    port:ros-log4cxx \
+                    port:log4cxx \
                     port:ros-hydro-rostime \
                     port:ros-hydro-rosunit \
                     port:ros-hydro-catkin \
@@ -27,6 +27,7 @@ depends_lib         port:python27 \
                     port:ros-hydro-cpp_common \
                     port:ros-log4cxx \
                     port:ros-hydro-rosbuild \
+                    port:log4cxx \
                     port:ros-hydro-rostime
 
 conflicts           ros-indigo-rosconsole ros-groovy-rosconsole
