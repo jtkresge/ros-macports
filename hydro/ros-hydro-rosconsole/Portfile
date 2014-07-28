@@ -25,7 +25,6 @@ depends_lib         port:python27 \
                     port:ros-hydro-catkin \
                     port:apr \
                     port:ros-hydro-cpp_common \
-                    port:ros-log4cxx \
                     port:ros-hydro-rosbuild \
                     port:log4cxx \
                     port:ros-hydro-rostime
