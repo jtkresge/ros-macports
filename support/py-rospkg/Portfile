@@ -5,7 +5,7 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-rospkg
-version             1.0.28
+version             1.0.30
 categories          python
 platforms           darwin
 license             bsd
@@ -15,7 +15,7 @@ homepage            https://github.com/ros-infrastructure/rospkg
 
 fetch.type          git
 git.url             https://github.com/ros-infrastructure/rospkg.git
-git.branch          9462ebdb9c72233c80687ccc6fb38ed4ddfd60da
+git.branch          cd9ea03067adf98232767475bd7b219f17e7da75
 checksum {}
 
 depends_build		port:py${python.version}-setuptools
